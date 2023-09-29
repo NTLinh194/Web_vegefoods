@@ -11,24 +11,24 @@
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="../css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="../css/animate.css">
 
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="../css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="../css/magnific-popup.css">
 
-  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="../css/aos.css">
 
-  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="../css/ionicons.min.css">
 
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="../css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="../css/jquery.timepicker.css">
 
 
-  <link rel="stylesheet" href="css/flaticon.css">
-  <link rel="stylesheet" href="css/icomoon.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/flaticon.css">
+  <link rel="stylesheet" href="../css/icomoon.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body class="goto-here">
@@ -66,7 +66,7 @@
   </nav>
   <!-- END nav -->
 
-  <div class="hero-wrap hero-bread" style="background-image: url('images/bg_1.jpg');">
+  <div class="hero-wrap hero-bread" style="background-image: url('../images/bg_1.jpg');">
     <div class="container">
       <div class="row no-gutters slider-text align-items-center justify-content-center">
         <div class="col-md-9 ftco-animate text-center">
@@ -87,7 +87,7 @@
             officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis,
             iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
           <p>
-            <img src="images/image_1.jpg" alt="" class="img-fluid">
+            <img src="../images/image_1.jpg" alt="" class="img-fluid">
           </p>
           <p>Molestiae cupiditate inventore animi, maxime sapiente optio, illo est nemo veritatis repellat sunt
             doloribus nesciunt! Minima laborum magni reiciendis qui voluptate quisquam voluptatem soluta illo eum ullam
@@ -99,7 +99,7 @@
             voluptas, omnis molestias odio dignissimos culpa ex earum nisi consequatur quos odit quasi repellat qui
             officiis reiciendis incidunt hic non? Debitis commodi aut, adipisci.</p>
           <p>
-            <img src="images/image_2.jpg" alt="" class="img-fluid">
+            <img src="../images/image_2.jpg" alt="" class="img-fluid">
           </p>
           <p>Quisquam esse aliquam fuga distinctio, quidem delectus veritatis reiciendis. Nihil explicabo quod, est eos
             ipsum. Unde aut non tenetur tempore, nisi culpa voluptate maiores officiis quis vel ab consectetur suscipit
@@ -128,7 +128,7 @@
 
           <div class="about-author d-flex p-4 bg-light">
             <div class="bio align-self-md-center mr-4">
-              <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4">
+              <img src="../images/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4">
             </div>
             <div class="desc align-self-md-center">
               <h3>Lance Smith</h3>
@@ -144,7 +144,7 @@
             <ul class="comment-list">
               <li class="comment">
                 <div class="vcard bio">
-                  <img src="images/person_1.jpg" alt="Image placeholder">
+                  <img src="../images/person_1.jpg" alt="Image placeholder">
                 </div>
                 <div class="comment-body">
                   <h3>John Doe</h3>
@@ -158,7 +158,7 @@
 
               <li class="comment">
                 <div class="vcard bio">
-                  <img src="images/person_1.jpg" alt="Image placeholder">
+                  <img src="../images/person_1.jpg" alt="Image placeholder">
                 </div>
                 <div class="comment-body">
                   <h3>John Doe</h3>
@@ -172,7 +172,7 @@
                 <ul class="children">
                   <li class="comment">
                     <div class="vcard bio">
-                      <img src="images/person_1.jpg" alt="Image placeholder">
+                      <img src="../images/person_1.jpg" alt="Image placeholder">
                     </div>
                     <div class="comment-body">
                       <h3>John Doe</h3>
@@ -187,7 +187,7 @@
                     <ul class="children">
                       <li class="comment">
                         <div class="vcard bio">
-                          <img src="images/person_1.jpg" alt="Image placeholder">
+                          <img src="../images/person_1.jpg" alt="Image placeholder">
                         </div>
                         <div class="comment-body">
                           <h3>John Doe</h3>
@@ -201,7 +201,7 @@
                         <ul class="children">
                           <li class="comment">
                             <div class="vcard bio">
-                              <img src="images/person_1.jpg" alt="Image placeholder">
+                              <img src="../images/person_1.jpg" alt="Image placeholder">
                             </div>
                             <div class="comment-body">
                               <h3>John Doe</h3>
@@ -221,7 +221,7 @@
 
               <li class="comment">
                 <div class="vcard bio">
-                  <img src="images/person_1.jpg" alt="Image placeholder">
+                  <img src="../images/person_1.jpg" alt="Image placeholder">
                 </div>
                 <div class="comment-body">
                   <h3>John Doe</h3>
@@ -285,7 +285,7 @@
           <div class="sidebar-box ftco-animate">
             <h3 class="heading">Recent Blog</h3>
             <div class="block-21 mb-4 d-flex">
-              <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+              <a class="blog-img mr-4" style="background-image: url(../images/image_1.jpg);"></a>
               <div class="text">
                 <h3 class="heading-1"><a href="#">Even the all-powerful Pointing has no control about the blind
                     texts</a></h3>
@@ -297,7 +297,7 @@
               </div>
             </div>
             <div class="block-21 mb-4 d-flex">
-              <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+              <a class="blog-img mr-4" style="background-image: url(../images/image_2.jpg);"></a>
               <div class="text">
                 <h3 class="heading-1"><a href="#">Even the all-powerful Pointing has no control about the blind
                     texts</a></h3>
@@ -309,7 +309,7 @@
               </div>
             </div>
             <div class="block-21 mb-4 d-flex">
-              <a class="blog-img mr-4" style="background-image: url(images/image_3.jpg);"></a>
+              <a class="blog-img mr-4" style="background-image: url(../images/image_3.jpg);"></a>
               <div class="text">
                 <h3 class="heading-1"><a href="#">Even the all-powerful Pointing has no control about the blind
                     texts</a></h3>
@@ -429,31 +429,25 @@
 
 
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-        stroke="#F96D00" />
-    </svg></div>
 
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/scrollax.min.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery.easing.1.3.js"></script>
+  <script src="../js/jquery.waypoints.min.js"></script>
+  <script src="../js/jquery.stellar.min.js"></script>
+  <script src="../js/owl.carousel.min.js"></script>
+  <script src="../js/jquery.magnific-popup.min.js"></script>
+  <script src="../js/aos.js"></script>
+  <script src="../js/jquery.animateNumber.min.js"></script>
+  <script src="../js/bootstrap-datepicker.js"></script>
+  <script src="../js/scrollax.min.js"></script>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../js/google-map.js"></script>
+  <script src="../js/main.js"></script>
 
 </body>
 
