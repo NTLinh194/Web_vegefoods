@@ -14,24 +14,24 @@ session_start();
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="./css/open-iconic-bootstrap.min.css">
-	<link rel="stylesheet" href="./css/animate.css">
+	<link rel="stylesheet" href="../css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="../css/animate.css">
 
-	<link rel="stylesheet" href="./css/owl.carousel.min.css">
-	<link rel="stylesheet" href="./css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="./css/magnific-popup.css">
+	<link rel="stylesheet" href="../css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="../css/magnific-popup.css">
 
-	<link rel="stylesheet" href="./css/aos.css">
+	<link rel="stylesheet" href="../css/aos.css">
 
-	<link rel="stylesheet" href="./css/ionicons.min.css">
+	<link rel="stylesheet" href="../css/ionicons.min.css">
 
-	<link rel="stylesheet" href="./css/bootstrap-datepicker.css">
-	<link rel="stylesheet" href="./css/jquery.timepicker.css">
+	<link rel="stylesheet" href="../css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="../css/jquery.timepicker.css">
 
 
-	<link rel="stylesheet" href="./css/flaticon.css">
-	<link rel="stylesheet" href="./css/icomoon.css">
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="../css/flaticon.css">
+	<link rel="stylesheet" href="../css/icomoon.css">
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body class="goto-here">
@@ -50,16 +50,16 @@ session_start();
 						<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
 							aria-haspopup="true" aria-expanded="false">Shop</a>
 						<div class="dropdown-menu" aria-labelledby="dropdown04">
-							<a class="dropdown-item" href="shop.php">Shop</a>
-							<a class="dropdown-item" href="wishlist.php">Wishlist</a>
-							<a class="dropdown-item" href="product-single.php">Single Product</a>
-							<a class="dropdown-item" href="cart.php">Cart</a>
-							<a class="dropdown-item" href="checkout.php">Checkout</a>
+							<a class="dropdown-item" href="./views/shop.php">Shop</a>
+							<a class="dropdown-item" href="./views/wishlist.php">Wishlist</a>
+							<a class="dropdown-item" href="./views/product-single.php">Single Product</a>
+							<a class="dropdown-item" href="./views/cart.php">Cart</a>
+							<a class="dropdown-item" href="./views/checkout.php">Checkout</a>
 						</div>
 					</li>
-					<li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
-					<li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
-					<li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+					<li class="nav-item"><a href="./views/about.php" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="./views/blog.php" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="./views/contact.php" class="nav-link">Contact</a></li>
 					<li class="nav-item cta cta-colored">
                         <a href="cart.php" class="nav-link">
                             <span class="icon-shopping_cart"></span>[0]
