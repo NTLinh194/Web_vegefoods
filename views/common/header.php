@@ -11,24 +11,24 @@
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="../assets11/css/open-iconic-bootstrap.min.css">
-	<link rel="stylesheet" href="../assets11/css/animate.css">
+	<link rel="stylesheet" href="../assets/css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/animate.css">
 
-	<link rel="stylesheet" href="../assets11/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="../assets11/css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="../assets11/css/magnific-popup.css">
+	<link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="../assets/css/magnific-popup.css">
 
-	<link rel="stylesheet" href="../assets11/css/aos.css">
+	<link rel="stylesheet" href="../assets/css/aos.css">
 
-	<link rel="stylesheet" href="../assets11/css/ionicons.min.css">
+	<link rel="stylesheet" href="../assets/css/ionicons.min.css">
 
-	<link rel="stylesheet" href="../assets11/css/bootstrap-datepicker.css">
-	<link rel="stylesheet" href="../assets11/css/jquery.timepicker.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="../assets/css/jquery.timepicker.css">
 
 
-	<link rel="stylesheet" href="../assets11/css/flaticon.css">
-	<link rel="stylesheet" href="../assets11/css/icomoon.css">
-	<link rel="stylesheet" href="../assets11/css/style.css">
+	<link rel="stylesheet" href="../assets/css/flaticon.css">
+	<link rel="stylesheet" href="../assets/css/icomoon.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body class="goto-here">

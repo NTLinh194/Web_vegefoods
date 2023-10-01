@@ -62,7 +62,10 @@
       </div>
 
       <div class="col-md-6 d-flex">
-        <div id="map" class="bg-white"></div>
+        <div id="map" class="bg-white">
+        <iframe width="100%" height="49.2%" src="https://www.youtube.com/embed/K0TXwVHW3rM?si=1WPxaNxxtsP5SvG9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="100%" height="49.2%" src="https://www.youtube.com/embed/K0TXwVHW3rM?si=1WPxaNxxtsP5SvG9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
