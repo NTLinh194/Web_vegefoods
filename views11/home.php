@@ -1,7 +1,6 @@
 <?php
-	include 'header.php';
+	include './common/header.php';
 ?>
-
 
 <section id="home-section" class="hero">
     <div class="home-slider owl-carousel">
@@ -593,5 +592,5 @@
 </section>
 
 <?php
-	include 'footer.php';
+	include './common/footer.php';
 ?>

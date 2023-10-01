@@ -1,5 +1,5 @@
 <?php
-	include 'header.php';
+	include './common/header.php';
 ?>
 
 <div class="hero-wrap hero-bread" style="background-image: url('../assets/images/bg_1.jpg');">
@@ -251,5 +251,5 @@
 </section>
 
 <?php
-	include 'footer.php';
+	include './common/footer.php';
 ?>
