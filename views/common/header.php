@@ -28,7 +28,7 @@
 
 	<link rel="stylesheet" href="../assets/css/flaticon.css">
 	<link rel="stylesheet" href="../assets/css/icomoon.css">
-	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="../assets/css/style1.css">
 </head>
 
 <body class="goto-here">
