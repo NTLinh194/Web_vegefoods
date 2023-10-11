@@ -4,1808 +4,1043 @@
 ?>
 
 <main role="main" class="main-content">
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <h2 class="mb-2 page-title">Data table</h2>
-        <p class="card-text">DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible
-          tool, built upon the foundations of progressive enhancement, that adds all of these advanced features to
-          any HTML table. </p>
-        <div class="row my-4">
-          <!-- Small table -->
-          <div class="col-md-12">
-            <div class="card shadow">
-              <div class="card-body">
-                <!-- table -->
-                <table class="table datatables" id="dataTable-1">
-                  <thead>
-                    <tr>
-                      <th></th>
-                      <th>#</th>
-                      <th>Name</th>
-                      <th>Phone</th>
-                      <th>Department</th>
-                      <th>Company</th>
-                      <th>Address</th>
-                      <th>City</th>
-                      <th>Date</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>368</td>
-                      <td>Imani Lara</td>
-                      <td>(478) 446-9234</td>
-                      <td>Asset Management</td>
-                      <td>Borland</td>
-                      <td>9022 Suspendisse Rd.</td>
-                      <td>High Wycombe</td>
-                      <td>Jun 8, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>323</td>
-                      <td>Walter Sawyer</td>
-                      <td>(671) 969-1704</td>
-                      <td>Tech Support</td>
-                      <td>Macromedia</td>
-                      <td>Ap #708-5152 Cursus. Ave</td>
-                      <td>Bath</td>
-                      <td>May 8, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>371</td>
-                      <td>Noelle Ray</td>
-                      <td>(803) 792-2559</td>
-                      <td>Human Resources</td>
-                      <td>Sibelius</td>
-                      <td>Ap #992-8933 Sagittis Street</td>
-                      <td>Ivanteyevka</td>
-                      <td>Apr 2, 2021</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>302</td>
-                      <td>Portia Nolan</td>
-                      <td>(216) 946-1119</td>
-                      <td>Payroll</td>
-                      <td>Microsoft</td>
-                      <td>Ap #461-4415 Enim Rd.</td>
-                      <td>Kanpur Cantonment</td>
-                      <td>Dec 4, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>443</td>
-                      <td>Scarlett Anderson</td>
-                      <td>(486) 309-3564</td>
-                      <td>Tech Support</td>
-                      <td>Yahoo</td>
-                      <td>P.O. Box 988, 7282 Lobortis Avenue</td>
-                      <td>Lot</td>
-                      <td>Dec 27, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>345</td>
-                      <td>Kevyn Mills</td>
-                      <td>(976) 873-4833</td>
-                      <td>Tech Support</td>
-                      <td>Sibelius</td>
-                      <td>P.O. Box 666, 9803 Sed Avenue</td>
-                      <td>Fino Mornasco</td>
-                      <td>Dec 24, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>356</td>
-                      <td>Sharon Buckley</td>
-                      <td>(429) 517-6784</td>
-                      <td>Tech Support</td>
-                      <td>Sibelius</td>
-                      <td>Ap #372-3407 Sed St.</td>
-                      <td>Lompret</td>
-                      <td>Mar 3, 2021</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>263</td>
-                      <td>Fletcher Everett</td>
-                      <td>(735) 632-1255</td>
-                      <td>Customer Service</td>
-                      <td>Borland</td>
-                      <td>Ap #688-5120 Egestas Avenue</td>
-                      <td>Beerzel</td>
-                      <td>Mar 27, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>227</td>
-                      <td>Bertha Ball</td>
-                      <td>(656) 680-1553</td>
-                      <td>Sales and Marketing</td>
-                      <td>Finale</td>
-                      <td>951-3836 Ac Rd.</td>
-                      <td>Cherbourg-Octeville</td>
-                      <td>Feb 11, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>396</td>
-                      <td>Phoebe Cobb</td>
-                      <td>(663) 233-0340</td>
-                      <td>Human Resources</td>
-                      <td>Adobe</td>
-                      <td>922 Enim. Avenue</td>
-                      <td>Fahler</td>
-                      <td>May 18, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>276</td>
-                      <td>Lillith Joseph</td>
-                      <td>(406) 343-5430</td>
-                      <td>Advertising</td>
-                      <td>Macromedia</td>
-                      <td>Ap #363-1293 Neque St.</td>
-                      <td>Vieuxville</td>
-                      <td>Sep 22, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>222</td>
-                      <td>Ruth Shaffer</td>
-                      <td>(488) 102-5116</td>
-                      <td>Human Resources</td>
-                      <td>Lycos</td>
-                      <td>Ap #117-5518 A, Rd.</td>
-                      <td>Buxton</td>
-                      <td>Feb 19, 2021</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>397</td>
-                      <td>Jerry Orr</td>
-                      <td>(657) 274-3095</td>
-                      <td>Accounting</td>
-                      <td>Lycos</td>
-                      <td>919-782 Vitae Street</td>
-                      <td>La Plata</td>
-                      <td>Jul 24, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>218</td>
-                      <td>Hayfa Cox</td>
-                      <td>(602) 569-0400</td>
-                      <td>Asset Management</td>
-                      <td>Altavista</td>
-                      <td>Ap #189-4628 Curabitur Rd.</td>
-                      <td>Dindigul</td>
-                      <td>Dec 8, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>361</td>
-                      <td>Ishmael Mcleod</td>
-                      <td>(148) 643-9938</td>
-                      <td>Customer Service</td>
-                      <td>Yahoo</td>
-                      <td>P.O. Box 253, 2328 Mauris St.</td>
-                      <td>San Juan del Río</td>
-                      <td>Feb 13, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>281</td>
-                      <td>Kevyn Snyder</td>
-                      <td>(659) 649-4750</td>
-                      <td>Customer Relations</td>
-                      <td>Macromedia</td>
-                      <td>P.O. Box 731, 7143 Sem Rd.</td>
-                      <td>Taber</td>
-                      <td>Mar 1, 2021</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>236</td>
-                      <td>Patience Sanders</td>
-                      <td>(287) 279-0868</td>
-                      <td>Legal Department</td>
-                      <td>Sibelius</td>
-                      <td>664-7649 Euismod Rd.</td>
-                      <td>Strijtem</td>
-                      <td>Mar 26, 2021</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>394</td>
-                      <td>Tamara Cooke</td>
-                      <td>(998) 560-1052</td>
-                      <td>Asset Management</td>
-                      <td>Macromedia</td>
-                      <td>Ap #507-3545 Enim. St.</td>
-                      <td>Hattiesburg</td>
-                      <td>Jan 25, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>276</td>
-                      <td>Abel Raymond</td>
-                      <td>(930) 726-7338</td>
-                      <td>Quality Assurance</td>
-                      <td>Yahoo</td>
-                      <td>5370 Vestibulum. Avenue</td>
-                      <td>La Cruz</td>
-                      <td>Jul 3, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>388</td>
-                      <td>Honorato Nichols</td>
-                      <td>(561) 758-1908</td>
-                      <td>Legal Department</td>
-                      <td>Microsoft</td>
-                      <td>P.O. Box 925, 286 Ipsum Street</td>
-                      <td>St. John's</td>
-                      <td>Aug 29, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>498</td>
-                      <td>Ishmael Aguirre</td>
-                      <td>(594) 850-4912</td>
-                      <td>Media Relations</td>
-                      <td>Yahoo</td>
-                      <td>P.O. Box 398, 8254 Pede, Av.</td>
-                      <td>Cannes</td>
-                      <td>Jul 5, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>277</td>
-                      <td>Christian Nieves</td>
-                      <td>(933) 345-5314</td>
-                      <td>Human Resources</td>
-                      <td>Cakewalk</td>
-                      <td>889-9118 Ipsum Rd.</td>
-                      <td>Berhampore</td>
-                      <td>Jul 8, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>215</td>
-                      <td>Nevada Weber</td>
-                      <td>(603) 763-9893</td>
-                      <td>Human Resources</td>
-                      <td>Altavista</td>
-                      <td>Ap #439-124 Eros St.</td>
-                      <td>Cádiz</td>
-                      <td>Nov 2, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>449</td>
-                      <td>Addison Tran</td>
-                      <td>(200) 967-8241</td>
-                      <td>Sales and Marketing</td>
-                      <td>Microsoft</td>
-                      <td>214-4812 Sed, Rd.</td>
-                      <td>Offenbach am Main</td>
-                      <td>Nov 30, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>272</td>
-                      <td>Brenna Reid</td>
-                      <td>(925) 647-2628</td>
-                      <td>Finances</td>
-                      <td>Microsoft</td>
-                      <td>P.O. Box 604, 587 Ac Street</td>
-                      <td>Gallicchio</td>
-                      <td>Jul 1, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>380</td>
-                      <td>Kirby Summers</td>
-                      <td>(140) 854-4790</td>
-                      <td>Human Resources</td>
-                      <td>Lycos</td>
-                      <td>Ap #611-2789 Donec Ave</td>
-                      <td>s Herenelderen</td>
-                      <td>Sep 23, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>316</td>
-                      <td>Cairo Villarreal</td>
-                      <td>(410) 944-9399</td>
-                      <td>Sales and Marketing</td>
-                      <td>Borland</td>
-                      <td>P.O. Box 631, 8966 Dapibus Street</td>
-                      <td>Alingsås</td>
-                      <td>Jan 10, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>369</td>
-                      <td>Savannah Gallagher</td>
-                      <td>(519) 628-8362</td>
-                      <td>Media Relations</td>
-                      <td>Microsoft</td>
-                      <td>6794 Lorem St.</td>
-                      <td>Knoxville</td>
-                      <td>Jul 27, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>477</td>
-                      <td>Cade Hinton</td>
-                      <td>(198) 250-0971</td>
-                      <td>Payroll</td>
-                      <td>Google</td>
-                      <td>Ap #621-2106 Amet Rd.</td>
-                      <td>Lo Prado</td>
-                      <td>Jun 22, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>493</td>
-                      <td>Daquan Arnold</td>
-                      <td>(659) 185-0446</td>
-                      <td>Finances</td>
-                      <td>Chami</td>
-                      <td>999-6646 Faucibus Rd.</td>
-                      <td>Empoli</td>
-                      <td>Nov 5, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>350</td>
-                      <td>Aquila Kramer</td>
-                      <td>(818) 871-1487</td>
-                      <td>Media Relations</td>
-                      <td>Google</td>
-                      <td>5155 Donec Ave</td>
-                      <td>Rewa</td>
-                      <td>May 5, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>403</td>
-                      <td>Rana Mcknight</td>
-                      <td>(243) 205-2734</td>
-                      <td>Accounting</td>
-                      <td>Finale</td>
-                      <td>Ap #236-8034 Imperdiet Street</td>
-                      <td>Zutendaal</td>
-                      <td>Feb 7, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>413</td>
-                      <td>Kareem Sweet</td>
-                      <td>(260) 159-8343</td>
-                      <td>Legal Department</td>
-                      <td>Macromedia</td>
-                      <td>566-2188 Libero. Road</td>
-                      <td>Nankana Sahib</td>
-                      <td>Sep 1, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>443</td>
-                      <td>Jonah Chavez</td>
-                      <td>(671) 419-1034</td>
-                      <td>Customer Service</td>
-                      <td>Yahoo</td>
-                      <td>8579 Sagittis Rd.</td>
-                      <td>Sydney</td>
-                      <td>Dec 4, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>336</td>
-                      <td>Tanek Decker</td>
-                      <td>(402) 292-6679</td>
-                      <td>Legal Department</td>
-                      <td>Sibelius</td>
-                      <td>2201 Libero Av.</td>
-                      <td>Bida</td>
-                      <td>Feb 22, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>314</td>
-                      <td>Oleg Mckay</td>
-                      <td>(634) 227-2714</td>
-                      <td>Research and Development</td>
-                      <td>Apple Systems</td>
-                      <td>P.O. Box 600, 1974 Arcu. Street</td>
-                      <td>Ancarano</td>
-                      <td>Feb 28, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>426</td>
-                      <td>Driscoll Kelly</td>
-                      <td>(948) 436-4534</td>
-                      <td>Accounting</td>
-                      <td>Sibelius</td>
-                      <td>Ap #784-6075 Fusce Avenue</td>
-                      <td>Sacramento</td>
-                      <td>Sep 9, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>479</td>
-                      <td>Kane Tillman</td>
-                      <td>(762) 298-8478</td>
-                      <td>Payroll</td>
-                      <td>Macromedia</td>
-                      <td>P.O. Box 119, 519 Sodales St.</td>
-                      <td>Hillsboro</td>
-                      <td>Apr 16, 2021</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>341</td>
-                      <td>Zorita Moran</td>
-                      <td>(840) 554-9481</td>
-                      <td>Accounting</td>
-                      <td>Lycos</td>
-                      <td>P.O. Box 290, 9398 Quam Rd.</td>
-                      <td>Viddalba</td>
-                      <td>Jun 16, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>322</td>
-                      <td>Alea Winters</td>
-                      <td>(449) 757-3194</td>
-                      <td>Customer Service</td>
-                      <td>Sibelius</td>
-                      <td>1999 Mus. Street</td>
-                      <td>Eastbourne</td>
-                      <td>Apr 5, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>455</td>
-                      <td>Mohammad Whitfield</td>
-                      <td>(550) 107-4320</td>
-                      <td>Accounting</td>
-                      <td>Macromedia</td>
-                      <td>P.O. Box 790, 9677 Purus Rd.</td>
-                      <td>Deline</td>
-                      <td>Nov 21, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>323</td>
-                      <td>Jerry Guzman</td>
-                      <td>(293) 790-5171</td>
-                      <td>Public Relations</td>
-                      <td>Borland</td>
-                      <td>P.O. Box 140, 3346 Mauris Ave</td>
-                      <td>Bury St. Edmunds</td>
-                      <td>Feb 15, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>211</td>
-                      <td>Kiara Bryant</td>
-                      <td>(438) 112-2227</td>
-                      <td>Customer Relations</td>
-                      <td>Altavista</td>
-                      <td>791-8711 Sed St.</td>
-                      <td>Aiello Calabro</td>
-                      <td>Nov 19, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>294</td>
-                      <td>Aquila James</td>
-                      <td>(944) 277-4831</td>
-                      <td>Quality Assurance</td>
-                      <td>Apple Systems</td>
-                      <td>P.O. Box 306, 6025 Justo Rd.</td>
-                      <td>Offida</td>
-                      <td>Jul 18, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>206</td>
-                      <td>Mia Madden</td>
-                      <td>(554) 422-4590</td>
-                      <td>Payroll</td>
-                      <td>Macromedia</td>
-                      <td>892-7709 Eget St.</td>
-                      <td>Aachen</td>
-                      <td>Aug 26, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>345</td>
-                      <td>Nasim Smith</td>
-                      <td>(750) 696-9160</td>
-                      <td>Customer Service</td>
-                      <td>Chami</td>
-                      <td>6755 Ultrices Av.</td>
-                      <td>Innisfail</td>
-                      <td>Jan 18, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>358</td>
-                      <td>Grady Tyson</td>
-                      <td>(967) 301-3938</td>
-                      <td>Research and Development</td>
-                      <td>Sibelius</td>
-                      <td>6927 Ante. Avenue</td>
-                      <td>Piscinas</td>
-                      <td>Feb 13, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>338</td>
-                      <td>Allen Swanson</td>
-                      <td>(326) 862-2675</td>
-                      <td>Legal Department</td>
-                      <td>Microsoft</td>
-                      <td>810-128 Libero. Rd.</td>
-                      <td>Desamparados</td>
-                      <td>Feb 2, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>429</td>
-                      <td>Cameran Phelps</td>
-                      <td>(292) 150-9250</td>
-                      <td>Tech Support</td>
-                      <td>Finale</td>
-                      <td>536 Aenean Rd.</td>
-                      <td>Proddatur</td>
-                      <td>Nov 5, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>305</td>
-                      <td>Palmer Maldonado</td>
-                      <td>(687) 671-7597</td>
-                      <td>Sales and Marketing</td>
-                      <td>Sibelius</td>
-                      <td>570 Feugiat. Ave</td>
-                      <td>Leominster</td>
-                      <td>Jul 28, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>286</td>
-                      <td>Russell Simon</td>
-                      <td>(499) 664-6600</td>
-                      <td>Public Relations</td>
-                      <td>Adobe</td>
-                      <td>Ap #974-1629 Placerat, Ave</td>
-                      <td>Coimbatore</td>
-                      <td>Oct 5, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>400</td>
-                      <td>Tatum Benton</td>
-                      <td>(844) 240-9223</td>
-                      <td>Public Relations</td>
-                      <td>Borland</td>
-                      <td>5639 Inceptos Road</td>
-                      <td>Cedar Rapids</td>
-                      <td>Jan 5, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>493</td>
-                      <td>Arden Harrington</td>
-                      <td>(380) 763-0890</td>
-                      <td>Quality Assurance</td>
-                      <td>Altavista</td>
-                      <td>P.O. Box 485, 2533 Tincidunt Road</td>
-                      <td>Central Jakarta</td>
-                      <td>Feb 29, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>419</td>
-                      <td>Hayes Fitzpatrick</td>
-                      <td>(756) 216-2498</td>
-                      <td>Customer Relations</td>
-                      <td>Lavasoft</td>
-                      <td>755-4189 Auctor, Avenue</td>
-                      <td>Frankfort</td>
-                      <td>Jun 18, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>203</td>
-                      <td>Barbara Charles</td>
-                      <td>(487) 840-1443</td>
-                      <td>Research and Development</td>
-                      <td>Microsoft</td>
-                      <td>217-2734 Rhoncus Street</td>
-                      <td>Fogliano Redipuglia</td>
-                      <td>Jul 17, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>443</td>
-                      <td>Kenyon Glover</td>
-                      <td>(593) 822-4946</td>
-                      <td>Sales and Marketing</td>
-                      <td>Adobe</td>
-                      <td>3615 Blandit St.</td>
-                      <td>San Bernardo</td>
-                      <td>Dec 11, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>346</td>
-                      <td>Evan Figueroa</td>
-                      <td>(803) 974-4759</td>
-                      <td>Payroll</td>
-                      <td>Yahoo</td>
-                      <td>P.O. Box 801, 9864 Lobortis Ave</td>
-                      <td>Santa Bárbara</td>
-                      <td>Jun 4, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>237</td>
-                      <td>Xavier Riley</td>
-                      <td>(135) 789-4714</td>
-                      <td>Sales and Marketing</td>
-                      <td>Macromedia</td>
-                      <td>Ap #317-3617 Nulla Av.</td>
-                      <td>Castor</td>
-                      <td>Apr 23, 2021</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>497</td>
-                      <td>Ray Hess</td>
-                      <td>(297) 183-1287</td>
-                      <td>Payroll</td>
-                      <td>Borland</td>
-                      <td>9049 Duis St.</td>
-                      <td>Basingstoke</td>
-                      <td>Dec 2, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>368</td>
-                      <td>Renee Wolf</td>
-                      <td>(734) 594-1676</td>
-                      <td>Asset Management</td>
-                      <td>Lycos</td>
-                      <td>Ap #939-7635 Quisque Road</td>
-                      <td>Squillace</td>
-                      <td>Oct 2, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>228</td>
-                      <td>Caldwell White</td>
-                      <td>(763) 192-7853</td>
-                      <td>Payroll</td>
-                      <td>Yahoo</td>
-                      <td>146 Integer Street</td>
-                      <td>Newark</td>
-                      <td>Mar 9, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>247</td>
-                      <td>Lance Bush</td>
-                      <td>(197) 616-3571</td>
-                      <td>Finances</td>
-                      <td>Lavasoft</td>
-                      <td>P.O. Box 377, 2374 Pellentesque. Road</td>
-                      <td>Kapuskasing</td>
-                      <td>May 11, 2019</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <label class="custom-control-label"></label>
-                        </div>
-                      </td>
-                      <td>427</td>
-                      <td>Clark Dennis</td>
-                      <td>(239) 172-7907</td>
-                      <td>Human Resources</td>
-                      <td>Finale</td>
-                      <td>Ap #978-3375 Adipiscing Av.</td>
-                      <td>High Level</td>
-                      <td>Sep 16, 2020</td>
-                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="text-muted sr-only">Action</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Remove</a>
-                          <a class="dropdown-item" href="#">Assign</a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div> <!-- simple table -->
-        </div> <!-- end section -->
-      </div> <!-- .col-12 -->
-    </div> <!-- .row -->
-  </div> <!-- .container-fluid -->
-  <div class="modal fade modal-notif modal-slide" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-sm" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="defaultModalLabel">Notifications</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="list-group list-group-flush my-n3">
-            <div class="list-group-item bg-transparent">
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <span class="fe fe-box fe-24"></span>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row">
+              <!-- Small table -->
+              <div class="col-md-12 my-4">
+                <h2 class="h4 mb-1">Customize table rendering</h2>
+                <p class="mb-3">Additional table rendering with vertical border, rich content formatting for cell</p>
+                <div class="card shadow">
+                  <div class="card-body">
+                    <div class="toolbar">
+                      <form class="form">
+                        <div class="form-row">
+                          <div class="form-group col-auto mr-auto">
+                            <label class="my-1 mr-2 sr-only" for="inlineFormCustomSelectPref1">Show</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelectPref1">
+                              <option value="">...</option>
+                              <option value="1">12</option>
+                              <option value="2" selected>32</option>
+                              <option value="3">64</option>
+                              <option value="3">128</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-auto">
+                            <label for="search" class="sr-only">Search</label>
+                            <input type="text" class="form-control" id="search1" value="" placeholder="Search">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- table -->
+                    <table class="table table-borderless table-hover">
+                      <thead>
+                        <tr>
+                          <td>
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="all2">
+                              <label class="custom-control-label" for="all2"></label>
+                            </div>
+                          </td>
+                          <th>ID</th>
+                          <th>User</th>
+                          <th>Company</th>
+                          <th>Contact</th>
+                          <th class="w-25">Bio</th>
+                          <th>Date</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="2474">
+                              <label class="custom-control-label" for="2474"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="avatar avatar-md">
+                              <img src="./assets/avatars/face-3.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><strong>Brown, Asher D.</strong></p>
+                            <small class="mb-0 text-muted">2474</small>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted">Accumsan Consulting</p>
+                            <small class="mb-0 text-muted">Ap #331-7123 Lobortis Avenue</small>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><a href="#" class="text-muted">(958) 421-0798</a></p>
+                            <small class="mb-0 text-muted">Nigeria</small>
+                          </td>
+                          <td class="w-25"><small class="text-muted"> Egestas integer eget aliquet nibh praesent. In hac
+                              habitasse platea dictumst quisque sagittis purus.</small></td>
+                          <td class="text-muted">13/09/2020</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="2786">
+                              <label class="custom-control-label" for="2786"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="avatar avatar-md">
+                              <img src="./assets/avatars/face-1.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><strong>Leblanc, Yoshio V.</strong></p>
+                            <small class="mb-0 text-muted">2786</small>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted">Fringilla Ornare Placerat Consulting</p>
+                            <small class="mb-0 text-muted">287-8300 Nisl. St</small>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><a href="#" class="text-muted">(899) 881-3833</a></p>
+                            <small class="mb-0 text-muted">Papua New Guinea</small>
+                          </td>
+                          <td class="w-25"><small class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></td>
+                          <td class="text-muted">04/05/2019</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="2747">
+                              <label class="custom-control-label" for="2747"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="avatar avatar-md">
+                              <img src="./assets/avatars/face-2.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><strong>Hester, Nissim L.</strong></p>
+                            <small class="mb-0 text-muted">2747</small>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted">Tristique Ltd</p>
+                            <small class="mb-0 text-muted">4577 Cras St.</small>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><a href="#" class="text-muted">(977) 220-6518</a></p>
+                            <small class="mb-0 text-muted">Central African Republic</small>
+                          </td>
+                          <td class="w-25"><small class="text-muted"> Non tellus orci ac auctor augue. Elit at imperdiet
+                              dui accumsan sit.</small></td>
+                          <td class="text-muted">21/08/2019</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="2639">
+                              <label class="custom-control-label" for="2639"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="avatar avatar-md">
+                              <img src="./assets/avatars/face-4.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><strong>Gardner, Leigh S.</strong></p>
+                            <small class="mb-0 text-muted">2639</small>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted">Orci Luctus Et Inc.</p>
+                            <small class="mb-0 text-muted">P.O. Box 228, 7512 Lectus Ave</small>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><a href="#" class="text-muted">(537) 315-1481</a></p>
+                            <small class="mb-0 text-muted">United Kingdom</small>
+                          </td>
+                          <td class="w-25"><small class="text-muted"> Nunc pulvinar sapien et ligula ullamcorper
+                              malesuada proin. Neque convallis a cras semper auctor</small></td>
+                          <td class="text-muted">04/08/2019</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="2238">
+                              <label class="custom-control-label" for="2238"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="avatar avatar-md">
+                              <img src="./assets/avatars/face-5.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><strong>Higgins, Uriah L.</strong></p>
+                            <small class="mb-0 text-muted">2238</small>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted">Sit Amet Lorem Industries</p>
+                            <small class="mb-0 text-muted">Ap #377-5357 Sed Road</small>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><a href="#" class="text-muted">(238) 386-0247</a></p>
+                            <small class="mb-0 text-muted">Canada</small>
+                          </td>
+                          <td class="w-25"><small class="text-muted"> Libero id faucibus nisl tincidunt eget. Leo a diam
+                              sollicitudin tempor id. </small></td>
+                          <td class="text-muted">26/07/2020</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="2152">
+                              <label class="custom-control-label" for="2152"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="avatar avatar-md">
+                              <img src="./assets/avatars/face-6.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><strong>Wheeler, Ralph F.</strong></p>
+                            <small class="mb-0 text-muted">2152</small>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted">Suspendisse LLC</p>
+                            <small class="mb-0 text-muted">Ap #410-5363 Non, Avenue</small>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><a href="#" class="text-muted">(587) 675-3258</a></p>
+                            <small class="mb-0 text-muted">Chad</small>
+                          </td>
+                          <td class="w-25"><small class="text-muted"> Libero id faucibus nisl tincidunt eget. Leo a diam
+                              sollicitudin tempor id. </small></td>
+                          <td class="text-muted">11/09/2019</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="2488">
+                              <label class="custom-control-label" for="2488"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="avatar avatar-md">
+                              <img src="./assets/avatars/face-7.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><strong>Kelley, Sonya Y.</strong></p>
+                            <small class="mb-0 text-muted">2488</small>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted">Dolor Incorporated</p>
+                            <small class="mb-0 text-muted">8250 Molestie St.</small>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><a href="#" class="text-muted">(934) 582-9495</a></p>
+                            <small class="mb-0 text-muted">British Indian Ocean Territory</small>
+                          </td>
+                          <td class="w-25"><small class="text-muted"> A lacus vestibulum sed arcu non odio euismod
+                              lacinia. In tellus integer feugiat scelerisque.</small></td>
+                          <td class="text-muted">30/03/2021</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <nav aria-label="Table Paging" class="mb-0 text-muted">
+                      <ul class="pagination justify-content-center mb-0">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                      </ul>
+                    </nav>
+                  </div>
                 </div>
-                <div class="col">
-                  <small><strong>Package has uploaded successfull</strong></small>
-                  <div class="my-0 text-muted small">Package is zipped and uploaded</div>
-                  <small class="badge badge-pill badge-light text-muted">1m ago</small>
+              </div> <!-- customized table -->
+            </div> <!-- end section -->
+            <div class="row">
+              <!-- Striped rows -->
+              <div class="col-md-12 my-4">
+                <h2 class="h4 mb-1">Grouped header & rows</h2>
+                <p class="mb-4">Customized table based on Bootstrap with additional elements and more functions</p>
+                <div class="card shadow">
+                  <div class="card-body">
+                    <div class="toolbar row mb-3">
+                      <div class="col">
+                        <form class="form-inline">
+                          <div class="form-row">
+                            <div class="form-group col-auto">
+                              <label for="search" class="sr-only">Search</label>
+                              <input type="text" class="form-control" id="search" value="" placeholder="Search">
+                            </div>
+                            <div class="form-group col-auto ml-3">
+                              <label class="my-1 mr-2 sr-only" for="inlineFormCustomSelectPref">Status</label>
+                              <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                <option selected>Choose...</option>
+                                <option value="1">Processing</option>
+                                <option value="2">Success</option>
+                                <option value="3">Pending</option>
+                                <option value="3">Hold</option>
+                              </select>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col ml-auto">
+                        <div class="dropdown float-right">
+                          <button class="btn btn-primary float-right ml-3" type="button">Add more +</button>
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="actionMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Action </button>
+                          <div class="dropdown-menu" aria-labelledby="actionMenuButton">
+                            <a class="dropdown-item" href="#">Export</a>
+                            <a class="dropdown-item" href="#">Delete</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- table -->
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr role="row">
+                          <th colspan="3">Orders</th>
+                          <th colspan="4">Billing</th>
+                          <th colspan="3">State</th>
+                        </tr>
+                        <tr role="row">
+                          <th>
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="all">
+                              <label class="custom-control-label" for="all"></label>
+                            </div>
+                          </th>
+                          <th>ID</th>
+                          <th>Purchase Date</th>
+                          <th>Name</th>
+                          <th>Phone</th>
+                          <th>Address</th>
+                          <th>Total</th>
+                          <th>Status</th>
+                          <th>Tracking #</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="4574">
+                              <label class="custom-control-label" for="4574"></label>
+                            </div>
+                          </td>
+                          <td>4574</td>
+                          <td>2019-09-11 10:22:04</td>
+                          <td>Kitra Knapp</td>
+                          <td>(132) 339-7423</td>
+                          <td>P.O. Box 944, 4739 Suspendisse Road</td>
+                          <td>$68.79</td>
+                          <td><span class="badge badge-warning">Pending</span></td>
+                          <td></td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="2132">
+                              <label class="custom-control-label" for="2132"></label>
+                            </div>
+                          </td>
+                          <td>2132</td>
+                          <td>2019-08-23 12:28:40</td>
+                          <td>Blake Orr</td>
+                          <td>(257) 565-4706</td>
+                          <td>P.O. Box 939, 9156 Sollicitudin St.</td>
+                          <td>$84.24</td>
+                          <td><span class="badge badge-warning">Pending</span></td>
+                          <td></td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr role="group" class="bg-light">
+                          <td colspan="10"><strong>Shipped</strong></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="2576">
+                              <label class="custom-control-label" for="2576"></label>
+                            </div>
+                          </td>
+                          <td>2576</td>
+                          <td>2020-07-14 17:18:27</td>
+                          <td>Amber Rice</td>
+                          <td>(791) 898-8806</td>
+                          <td>P.O. Box 724, 3385 Vel Ave</td>
+                          <td>$37.00</td>
+                          <td><span class="badge badge-success">Success</span></td>
+                          <td>487385-5144</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="2397">
+                              <label class="custom-control-label" for="2397"></label>
+                            </div>
+                          </td>
+                          <td>2397</td>
+                          <td>2020-12-25 13:35:39</td>
+                          <td>Fletcher Petty</td>
+                          <td>(115) 625-5813</td>
+                          <td>8907 Orci St.</td>
+                          <td>$75.69</td>
+                          <td><span class="badge badge-success">Success</span></td>
+                          <td>039606-5955</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr role="group" class="bg-light">
+                          <td colspan="10"><strong>Return</strong></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="4028">
+                              <label class="custom-control-label" for="4028"></label>
+                            </div>
+                          </td>
+                          <td>4028</td>
+                          <td>2021-04-11 22:33:47</td>
+                          <td>Kasimir Carr</td>
+                          <td>(266) 991-0479</td>
+                          <td>489-624 Quis St.</td>
+                          <td>$86.89</td>
+                          <td><span class="badge badge-danger">Hold</span></td>
+                          <td></td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="3782">
+                              <label class="custom-control-label" for="3782"></label>
+                            </div>
+                          </td>
+                          <td>3782</td>
+                          <td>2020-03-01 10:44:03</td>
+                          <td>Daria Frank</td>
+                          <td>(599) 361-7999</td>
+                          <td>Ap #875-5778 Massa. Av.</td>
+                          <td>$38.04</td>
+                          <td><span class="badge badge-primary">Processing</span></td>
+                          <td>072140-0703</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="3881">
+                              <label class="custom-control-label" for="3881"></label>
+                            </div>
+                          </td>
+                          <td>3881</td>
+                          <td>2019-12-17 00:40:24</td>
+                          <td>Herrod Byrd</td>
+                          <td>(878) 901-7269</td>
+                          <td>P.O. Box 107, 3720 Vitae, Ave</td>
+                          <td>$73.38</td>
+                          <td><span class="badge badge-primary">Processing</span></td>
+                          <td>047336-4370</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <nav aria-label="Table Paging" class="mb-0 text-muted">
+                      <ul class="pagination justify-content-end mb-0">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div> <!-- simple table -->
+            </div> <!-- end section -->
+            <div class="row">
+              <div class="col-md-12 my-4">
+                <h2 class="h4 mb-1">Expandable rows</h2>
+                <p class="mb-3">Child rows with additional detailed information</p>
+                <div class="card shadow">
+                  <div class="card-body">
+                    <!-- table -->
+                    <table class="table table-hover table-borderless border-v">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th>Invoice No</th>
+                          <th>Invoice Date</th>
+                          <th>Order #</th>
+                          <th>Bill To</th>
+                          <th>Status</th>
+                          <th>Grand Total</th>
+                          <th>Total</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="accordion-toggle collapsed" id="c-2474" data-toggle="collapse" data-parent="#c-2474"
+                          href="#collap-2474">
+                          <td>3599</td>
+                          <td>2020-09-12 11:21:03</td>
+                          <td>3951</td>
+                          <td>Alexander Ellis</td>
+                          <td><span class="badge badge-pill badge-success mr-2">S</span><small
+                              class="text-muted">Paid</small></td>
+                          <td>$37.39</td>
+                          <td>$80.11</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr id="collap-2474" class="collapse show in p-3 bg-light">
+                          <td colspan="8">
+                            <dl class="row mb-0 mt-1">
+                              <dt class="col-sm-1">Company</dt>
+                              <dd class="col-sm-2">Fringilla Ornare Consulting</dd>
+                              <dt class="col-sm-1">Address</dt>
+                              <dd class="col-sm-2">287-8300 Nisl. St.</dd>
+                              <dt class="col-sm-1">Phone</dt>
+                              <dd class="col-sm-2">(899) 881-3833</dd>
+                              <dt class="col-sm-1 text-truncate">Region</dt>
+                              <dd class="col-sm-2">Papua New Guinea</dd>
+                            </dl>
+                          </td>
+                        </tr>
+                        <tr class="accordion-toggle collapsed" id="c-3954" data-toggle="collapse" data-parent="#c-3954"
+                          href="#collap-3954">
+                          <td>3954</td>
+                          <td>2020-10-11 19:09:12</td>
+                          <td>4038</td>
+                          <td>Casey Caldwell</td>
+                          <td><span class="badge badge-pill badge-success mr-2">S</span><small
+                              class="text-muted">Paid</small></td>
+                          <td>$30.74</td>
+                          <td>$46.14</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr id="collap-3954" class="collapse in p-3 bg-light">
+                          <td colspan="8">
+                            <dl class="row mb-0 mt-1">
+                              <dt class="col-sm-1">Company</dt>
+                              <dd class="col-sm-2">Tristique Ltd</dd>
+                              <dt class="col-sm-1">Address</dt>
+                              <dd class="col-sm-2">4577 Cras St.</dd>
+                              <dt class="col-sm-1">Phone</dt>
+                              <dd class="col-sm-2">(977) 220-6518</dd>
+                              <dt class="col-sm-1 text-truncate">Region</dt>
+                              <dd class="col-sm-2">Central African Republic</dd>
+                            </dl>
+                          </td>
+                        <tr class="accordion-toggle collapsed" id="c-2429" data-toggle="collapse" data-parent="#c-2429"
+                          href="#collap-2429">
+                          <td>2429</td>
+                          <td>2020-11-26 02:45:30</td>
+                          <td>4603</td>
+                          <td>Jack Adams</td>
+                          <td><span class="badge badge-pill badge-warning mr-2">W</span><small
+                              class="text-muted">Pending</small></td>
+                          <td>$20.84</td>
+                          <td>$28.51</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr id="collap-2429" class="collapse in p-3 bg-light">
+                          <td colspan="8">
+                            <dl class="row mb-0 mt-1">
+                              <dt class="col-sm-1">Company</dt>
+                              <dd class="col-sm-2">Orci Luctus Et Inc.</dd>
+                              <dt class="col-sm-1">Address</dt>
+                              <dd class="col-sm-2">P.O. Box 228, 7512 Lectus Ave</dd>
+                              <dt class="col-sm-1">Phone</dt>
+                              <dd class="col-sm-2">(537) 315-1481</dd>
+                              <dt class="col-sm-1 text-truncate">Region</dt>
+                              <dd class="col-sm-2">Bonaire, Sint Eustatius and Sabac</dd>
+                            </dl>
+                          </td>
+                        </tr>
+                        <tr class="accordion-toggle collapsed" id="c-3987" data-toggle="collapse" data-parent="#c-3987"
+                          href="#collap-3987">
+                          <td>3987</td>
+                          <td>2020-02-13 19:29:45</td>
+                          <td>4261</td>
+                          <td>Samantha Hansen</td>
+                          <td><span class="badge badge-pill badge-success mr-2">S</span><small
+                              class="text-muted">Paid</small></td>
+                          <td>$83.19</td>
+                          <td>$48.48</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr id="collap-3987" class="collapse in p-3 bg-light">
+                          <td colspan="8">
+                            <dl class="row mb-0 mt-1">
+                              <dt class="col-sm-1">Company</dt>
+                              <dd class="col-sm-2">Ap #377-5357 Sed Road</dd>
+                              <dt class="col-sm-1">Address</dt>
+                              <dd class="col-sm-2">P.O. Box 228, 7512 Lectus Ave</dd>
+                              <dt class="col-sm-1">Phone</dt>
+                              <dd class="col-sm-2">(238) 386-0247</dd>
+                              <dt class="col-sm-1 text-truncate">Region</dt>
+                              <dd class="col-sm-2">Canada</dd>
+                            </dl>
+                          </td>
+                        </tr>
+                        <tr class="accordion-toggle collapsed" id="c-3165" data-toggle="collapse" data-parent="#c-3987"
+                          href="#collap-3165">
+                          <td>3165</td>
+                          <td>2020-05-05 22:33:28</td>
+                          <td>3308</td>
+                          <td>Carla Ochoa</td>
+                          <td><span class="badge badge-pill badge-primary mr-2">P</span><small
+                              class="text-muted">Invoiced</small></td>
+                          <td>$99.92</td>
+                          <td>$38.62</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr id="collap-3165" class="collapse in p-3 bg-light">
+                          <td colspan="8">
+                            <dl class="row mb-0 mt-1">
+                              <dt class="col-sm-1">Company</dt>
+                              <dd class="col-sm-2">Suspendisse LLC</dd>
+                              <dt class="col-sm-1">Address</dt>
+                              <dd class="col-sm-2">Ap #410-5363 Non, Avenue</dd>
+                              <dt class="col-sm-1">Phone</dt>
+                              <dd class="col-sm-2">(587) 675-3258</dd>
+                              <dt class="col-sm-1 text-truncate">Region</dt>
+                              <dd class="col-sm-2">Chad</dd>
+                            </dl>
+                          </td>
+                        </tr>
+                        <tr class="accordion-toggle collapsed" id="c-5429" data-toggle="collapse" data-parent="#c-5429"
+                          href="#collap-5429">
+                          <td>5429</td>
+                          <td>2020-11-26 02:45:30</td>
+                          <td>4603</td>
+                          <td>Jack Adams</td>
+                          <td><span class="badge badge-pill badge-warning mr-2">W</span><small
+                              class="text-muted">Pending</small></td>
+                          <td>$20.84</td>
+                          <td>$28.51</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr id="collap-5429" class="collapse in p-3 bg-light">
+                          <td colspan="8">
+                            <dl class="row mb-0 mt-1">
+                              <dt class="col-sm-1">Company</dt>
+                              <dd class="col-sm-2">Dolor Incorporated</dd>
+                              <dt class="col-sm-1">Address</dt>
+                              <dd class="col-sm-2">8250 Molestie St.</dd>
+                              <dt class="col-sm-1">Phone</dt>
+                              <dd class="col-sm-2">(934) 582-9495</dd>
+                              <dt class="col-sm-1 text-truncate">Region</dt>
+                              <dd class="col-sm-2">British</dd>
+                            </dl>
+                          </td>
+                        </tr>
+                        <tr class="accordion-toggle collapsed" id="c-3951" data-toggle="collapse" data-parent="#c-3951"
+                          href="#collap-3951">
+                          <td>3951</td>
+                          <td>2020-10-11 19:09:12</td>
+                          <td>4038</td>
+                          <td>Casey Caldwell</td>
+                          <td><span class="badge badge-pill badge-success mr-2">S</span><small
+                              class="text-muted">Paid</small></td>
+                          <td>$30.74</td>
+                          <td>$46.14</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr id="collap-3951" class="collapse in p-3 bg-light">
+                          <td colspan="8">
+                            <dl class="row mb-0 mt-1">
+                              <dt class="col-sm-1">Company</dt>
+                              <dd class="col-sm-2">Urna Et PC</dd>
+                              <dt class="col-sm-1">Address</dt>
+                              <dd class="col-sm-2">3132 Mi Av.</dd>
+                              <dt class="col-sm-1">Phone</dt>
+                              <dd class="col-sm-2">(459) 982-1284</dd>
+                              <dt class="col-sm-1 text-truncate">Region</dt>
+                              <dd class="col-sm-2">Burkina Faso</dd>
+                            </dl>
+                          </td>
+                        </tr>
+                        <tr class="accordion-toggle collapsed" id="c-3599" data-toggle="collapse" data-parent="#c-3599"
+                          href="#collap-3599">
+                          <td>3599</td>
+                          <td>2020-09-12 11:21:03</td>
+                          <td>3951</td>
+                          <td>Alexander Ellis</td>
+                          <td><span class="badge badge-pill badge-primary mr-2">P</span><small
+                              class="text-muted">Invoiced</small></td>
+                          <td>$37.39</td>
+                          <td>$80.11</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                              <a class="dropdown-item" href="#">Assign</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr id="collap-3599" class="collapse in p-3 bg-light">
+                          <td colspan="8">
+                            <dl class="row mb-0 mt-1">
+                              <dt class="col-sm-1">Company</dt>
+                              <dd class="col-sm-2">Mi Consulting</dd>
+                              <dt class="col-sm-1">Address</dt>
+                              <dd class="col-sm-2">921-6311 Nam Av.</dd>
+                              <dt class="col-sm-1">Phone</dt>
+                              <dd class="col-sm-2">(759) 501-2397</dd>
+                              <dt class="col-sm-1 text-truncate">Region</dt>
+                              <dd class="col-sm-2">Singapore</dd>
+                            </dl>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
+            </div> <!-- end section -->
+          </div> <!-- .col-12 -->
+        </div> <!-- .row -->
+      </div> <!-- .container-fluid -->
+      <div class="modal fade modal-notif modal-slide" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="defaultModalLabel">Notifications</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-            <div class="list-group-item bg-transparent">
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <span class="fe fe-download fe-24"></span>
+            <div class="modal-body">
+              <div class="list-group list-group-flush my-n3">
+                <div class="list-group-item bg-transparent">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <span class="fe fe-box fe-24"></span>
+                    </div>
+                    <div class="col">
+                      <small><strong>Package has uploaded successfull</strong></small>
+                      <div class="my-0 text-muted small">Package is zipped and uploaded</div>
+                      <small class="badge badge-pill badge-light text-muted">1m ago</small>
+                    </div>
+                  </div>
                 </div>
-                <div class="col">
-                  <small><strong>Widgets are updated successfull</strong></small>
-                  <div class="my-0 text-muted small">Just create new layout Index, form, table</div>
-                  <small class="badge badge-pill badge-light text-muted">2m ago</small>
+                <div class="list-group-item bg-transparent">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <span class="fe fe-download fe-24"></span>
+                    </div>
+                    <div class="col">
+                      <small><strong>Widgets are updated successfull</strong></small>
+                      <div class="my-0 text-muted small">Just create new layout Index, form, table</div>
+                      <small class="badge badge-pill badge-light text-muted">2m ago</small>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="list-group-item bg-transparent">
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <span class="fe fe-inbox fe-24"></span>
+                <div class="list-group-item bg-transparent">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <span class="fe fe-inbox fe-24"></span>
+                    </div>
+                    <div class="col">
+                      <small><strong>Notifications have been sent</strong></small>
+                      <div class="my-0 text-muted small">Fusce dapibus, tellus ac cursus commodo</div>
+                      <small class="badge badge-pill badge-light text-muted">30m ago</small>
+                    </div>
+                  </div> <!-- / .row -->
                 </div>
-                <div class="col">
-                  <small><strong>Notifications have been sent</strong></small>
-                  <div class="my-0 text-muted small">Fusce dapibus, tellus ac cursus commodo</div>
-                  <small class="badge badge-pill badge-light text-muted">30m ago</small>
-                </div>
-              </div> <!-- / .row -->
+                <div class="list-group-item bg-transparent">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <span class="fe fe-link fe-24"></span>
+                    </div>
+                    <div class="col">
+                      <small><strong>Link was attached to menu</strong></small>
+                      <div class="my-0 text-muted small">New layout has been attached to the menu</div>
+                      <small class="badge badge-pill badge-light text-muted">1h ago</small>
+                    </div>
+                  </div>
+                </div> <!-- / .row -->
+              </div> <!-- / .list-group -->
             </div>
-            <div class="list-group-item bg-transparent">
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <span class="fe fe-link fe-24"></span>
-                </div>
-                <div class="col">
-                  <small><strong>Link was attached to menu</strong></small>
-                  <div class="my-0 text-muted small">New layout has been attached to the menu</div>
-                  <small class="badge badge-pill badge-light text-muted">1h ago</small>
-                </div>
-              </div>
-            </div> <!-- / .row -->
-          </div> <!-- / .list-group -->
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Clear All</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade modal-shortcut modal-slide" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="defaultModalLabel">Shortcuts</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body px-5">
-          <div class="row align-items-center">
-            <div class="col-6 text-center">
-              <div class="squircle bg-success justify-content-center">
-                <i class="fe fe-cpu fe-32 align-self-center text-white"></i>
-              </div>
-              <p>Control area</p>
-            </div>
-            <div class="col-6 text-center">
-              <div class="squircle bg-primary justify-content-center">
-                <i class="fe fe-activity fe-32 align-self-center text-white"></i>
-              </div>
-              <p>Activity</p>
-            </div>
-          </div>
-          <div class="row align-items-center">
-            <div class="col-6 text-center">
-              <div class="squircle bg-primary justify-content-center">
-                <i class="fe fe-droplet fe-32 align-self-center text-white"></i>
-              </div>
-              <p>Droplet</p>
-            </div>
-            <div class="col-6 text-center">
-              <div class="squircle bg-primary justify-content-center">
-                <i class="fe fe-upload-cloud fe-32 align-self-center text-white"></i>
-              </div>
-              <p>Upload</p>
-            </div>
-          </div>
-          <div class="row align-items-center">
-            <div class="col-6 text-center">
-              <div class="squircle bg-primary justify-content-center">
-                <i class="fe fe-users fe-32 align-self-center text-white"></i>
-              </div>
-              <p>Users</p>
-            </div>
-            <div class="col-6 text-center">
-              <div class="squircle bg-primary justify-content-center">
-                <i class="fe fe-settings fe-32 align-self-center text-white"></i>
-              </div>
-              <p>Settings</p>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Clear All</button>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</main> <!-- main -->
+      <div class="modal fade modal-shortcut modal-slide" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="defaultModalLabel">Shortcuts</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body px-5">
+              <div class="row align-items-center">
+                <div class="col-6 text-center">
+                  <div class="squircle bg-success justify-content-center">
+                    <i class="fe fe-cpu fe-32 align-self-center text-white"></i>
+                  </div>
+                  <p>Control area</p>
+                </div>
+                <div class="col-6 text-center">
+                  <div class="squircle bg-primary justify-content-center">
+                    <i class="fe fe-activity fe-32 align-self-center text-white"></i>
+                  </div>
+                  <p>Activity</p>
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-6 text-center">
+                  <div class="squircle bg-primary justify-content-center">
+                    <i class="fe fe-droplet fe-32 align-self-center text-white"></i>
+                  </div>
+                  <p>Droplet</p>
+                </div>
+                <div class="col-6 text-center">
+                  <div class="squircle bg-primary justify-content-center">
+                    <i class="fe fe-upload-cloud fe-32 align-self-center text-white"></i>
+                  </div>
+                  <p>Upload</p>
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-6 text-center">
+                  <div class="squircle bg-primary justify-content-center">
+                    <i class="fe fe-users fe-32 align-self-center text-white"></i>
+                  </div>
+                  <p>Users</p>
+                </div>
+                <div class="col-6 text-center">
+                  <div class="squircle bg-primary justify-content-center">
+                    <i class="fe fe-settings fe-32 align-self-center text-white"></i>
+                  </div>
+                  <p>Settings</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main> <!-- main -->
 
 <?php
   include "./inc/footer_admin.php";
