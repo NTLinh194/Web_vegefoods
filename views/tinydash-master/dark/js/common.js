@@ -3,15 +3,15 @@
 Chart.defaults.global.defaultFontFamily = base.defaultFontFamily;
 Chart.defaults.global.defaultFontColor = colors.mutedColor;
 
-$('.select2').select2(
-    {
-        theme: 'bootstrap4',
-    });
-$('.select2-multi').select2(
-    {
-        multiple: true,
-        theme: 'bootstrap4',
-    });
+// $('.select2').select2(
+//     {
+//         theme: 'bootstrap4',
+//     });
+// $('.select2-multi').select2(
+//     {
+//         multiple: true,
+//         theme: 'bootstrap4',
+//     });
 $('.drgpicker').daterangepicker(
     {
         singleDatePicker: true,
@@ -22,11 +22,11 @@ $('.drgpicker').daterangepicker(
             format: 'MM/DD/YYYY'
         }
     });
-$('.time-input').timepicker(
-    {
-        'scrollDefault': 'now',
-        'zhome_admin': '9999' /* fix modal open */
-    });
+// $('.time-input').timepicker(
+//     {
+//         'scrollDefault': 'now',
+//         'zhome_admin': '9999' /* fix modal open */
+//     });
 /** date range picker */
 if ($('.datetimes').length) {
     $('.datetimes').daterangepicker(
@@ -61,32 +61,32 @@ $('#reportrange').daterangepicker(
         }
     }, cb);
 cb(start, end);
-$('.input-placeholder').mask("00/00/0000",
-    {
-        placeholder: "__/__/____"
-    });
-$('.input-zip').mask('00000-000',
-    {
-        placeholder: "____-___"
-    });
-$('.input-money').mask("#.##0,00",
-    {
-        reverse: true
-    });
-$('.input-phoneus').mask('(000) 000-0000');
-$('.input-mixed').mask('AAA 000-S0S');
-$('.input-ip').mask('0ZZ.0ZZ.0ZZ.0ZZ',
-    {
-        translation:
-        {
-            'Z':
-            {
-                pattern: /[0-9]/,
-                optional: true
-            }
-        },
-        placeholder: "___.___.___.___"
-    });
+// $('.input-placeholder').mask("00/00/0000",
+//     {
+//         placeholder: "__/__/____"
+//     });
+// $('.input-zip').mask('00000-000',
+//     {
+//         placeholder: "____-___"
+//     });
+// $('.input-money').mask("#.##0,00",
+//     {
+//         reverse: true
+//     });
+// $('.input-phoneus').mask('(000) 000-0000');
+// $('.input-mixed').mask('AAA 000-S0S');
+// $('.input-ip').mask('0ZZ.0ZZ.0ZZ.0ZZ',
+//     {
+//         translation:
+//         {
+//             'Z':
+//             {
+//                 pattern: /[0-9]/,
+//                 optional: true
+//             }
+//         },
+//         placeholder: "___.___.___.___"
+//     });
 // editor
 var editor = document.getElementById('editor');
 if (editor) {
@@ -236,12 +236,12 @@ if (calendarEl) {
 
 
 // table_basic
-$('#dataTable-1').DataTable(
-    {
-        autoWidth: true,
-        "lengthMenu": [
-            [16, 32, 64, -1],
-            [16, 32, 64, "All"]
-        ]
-    }
-);
+// $('#dataTable-1').DataTable(
+//     {
+//         autoWidth: true,
+//         "lengthMenu": [
+//             [16, 32, 64, -1],
+//             [16, 32, 64, "All"]
+//         ]
+//     }
+// );

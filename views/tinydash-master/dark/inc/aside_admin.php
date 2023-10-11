@@ -21,34 +21,61 @@
           <li class="nav-item w-100">
             <a class="nav-link" href="home_admin.php">
               <i class="fe fe-home fe-16"></i>
-              <span class="ml-3 item-text">Dashboard</span>
+              <span class="ml-3 item-text">Trang chủ</span>
             </a>
           </li>
 
           <li class="nav-item dropdown">
             <a href="#tables" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
-              <i class="fe fe-grid fe-16"></i>
-              <span class="ml-3 item-text">Tables</span>
+              <i class="fe fe-box fe-16"></i>
+              <span class="ml-3 item-text">Kho hàng</span>
             </a>
             <ul class="collapse list-unstyled pl-4 w-100" id="tables">
               <li class="nav-item">
-                <a class="nav-link pl-3" href="./table_basic.php"><span class="ml-1 item-text">Basic Tables</span></a>
+                <a class="nav-link pl-3" href="./table_basic.php"><span class="ml-1 item-text">Sản phẩm</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link pl-3" href="./table_advanced.php"><span class="ml-1 item-text">Advanced
-                    Tables</span></a>
+                <a class="nav-link pl-3" href="./table_advanced.php"><span class="ml-1 item-text">Thương hiệu</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link pl-3" href="./table_datatables.php"><span class="ml-1 item-text">Data
-                    Tables</span></a>
+                <a class="nav-link pl-3" href="./table_datatables.php"><span class="ml-1 item-text">Danh mục</span></a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="#tables" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+              <i class="fe fe-file-text fe-16"></i>
+              <span class="ml-3 item-text">Đơn hàng</span>
+            </a>
+            <ul class="collapse list-unstyled pl-4 w-100" id="tables">
+              <li class="nav-item">
+                <a class="nav-link pl-3" href="./table_basic.php"><span class="ml-1 item-text">Phiếu nhập</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pl-3" href="./table_advanced.php"><span class="ml-1 item-text">Phiếu xuất</span></a>
               </li>
             </ul>
           </li>
 
           <li class="nav-item w-100">
             <a class="nav-link" href="calendar.php">
+              <i class="fe fe-bar-chart-2 fe-16"></i>
+              <span class="ml-3 item-text">Thống kê</span>
+            </a>
+          </li>
+
+          <li class="nav-item w-100">
+            <a class="nav-link" href="calendar.php">
+              <i class="fe fe-monitor fe-16"></i>
+              <span class="ml-3 item-text">Hiển thị</span>
+            </a>
+          </li>
+
+          <li class="nav-item w-100">
+            <a class="nav-link" href="calendar.php">
               <i class="fe fe-calendar fe-16"></i>
-              <span class="ml-3 item-text">Calendar</span>
+              <span class="ml-3 item-text">Lịch</span>
             </a>
           </li>
         </ul>
