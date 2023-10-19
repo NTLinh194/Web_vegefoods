@@ -502,7 +502,8 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
+  /* max-width: 100%; */
+  width: 100%;
   height: auto;
 }
 
@@ -13239,7 +13240,7 @@ textarea.form-control {
 }
 
 .ftco-section {
-  padding: 6em 0;
+  padding: 6em 0 0;
   position: relative;
 }
 

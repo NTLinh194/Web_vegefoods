@@ -48,15 +48,15 @@
 							aria-haspopup="true" aria-expanded="false">Shop</a>
 						<div class="dropdown-menu" aria-labelledby="dropdown04">
 							<a class="dropdown-item" href="shop.php">Shop</a>
-							<a class="dropdown-item" href="wishlist.php">Wishlist</a>
-							<a class="dropdown-item" href="product-single.php">Single Product</a>
-							<a class="dropdown-item" href="cart.php">Cart</a>
-							<a class="dropdown-item" href="checkout.php">Checkout</a>
+							<a class="dropdown-item" href="wishlist.php?act=wishlist">Wishlist</a>
+							<a class="dropdown-item" href="info-product.php?act=info-product">Single Product</a>
+							<a class="dropdown-item" href="cart.php?act=cart">Cart</a>
+							<a class="dropdown-item" href="checkout.php?act=checkout">Checkout</a>
 						</div>
 					</li>
-					<li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
-					<li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
-					<li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+					<li class="nav-item"><a href="about.php?act=about" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="blog.php?act=blog" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="contact.php?act=contact" class="nav-link">Contact</a></li>
 					<li class="nav-item cta cta-colored">
 						<a href="cart.php" class="nav-link">
 							<span class="icon-shopping_cart"></span>[0]

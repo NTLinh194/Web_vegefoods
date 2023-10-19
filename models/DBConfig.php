@@ -1,12 +1,4 @@
 <?php
-    // $conn = mysqli_connect("localhost","root","","web_food");
-    // if(!$conn) {
-    //     die("Failed to connect".mysqli_connect_error());
-    // }
-    // else {
-    //     echo "Connection established";
-    // }
-
     class DBConnection {
         private $hostname = "localhost";
         private $username = "root";
@@ -32,4 +24,4 @@
 ?>
 
 
-
+<!-- https://youtu.be/QxIxNjOCCDQ?si=IdbLEoEdapiThmYy  phut 17-->
