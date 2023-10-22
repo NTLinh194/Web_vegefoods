@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+body.login {
+    background: url(https://c4.wallpaperflare.com/wallpaper/638/601/313/lipstick-shadows-black-background-brush-cosmetics-hd-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container__login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 300px;
+    display: flex;
+    transition: all 0.5s linear;
+}
+
+#container__login .decor {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 25px;
+    background: #755D58;
+    color: #F4FDFF;
+    border: 1px solid black;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#container__login .decor .welcome {
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#container__login .decor .slogan {
+    font-style: oblique 8deg;
+    height: 110px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#container__login .decor .btnRegister {
+    width: 180px;
+    height: 35px;
+    border-radius: 20px;
+    color: #F4FDFF;
+    background: black;
+    border: 2px solid #F4FDFF;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+#container__login .decor .btnRegister:hover {
+    opacity: 0.8;
+}
+
+#container__login .LGform {
+    padding: 5px 25px;
+    width: 100%;
+    flex-basis: 50%;
+    border: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px; 
+    background: #EEE0DC;
+}
+
+#container__login .LGform .title_LG {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+#container__login .LGform .form_input {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#container__login .LGform .form_input .txt {
+    width: 85%;
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: none;
+    background: #D9D9D9;
+    align-self: center;
+}
+
+#container__login .LGform .form_input .note_login {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    font-size: 15px;
+    padding: 0 0 .8rem 2rem;
+    margin-top: 10px;
+}
+
+#container__login .LGform .form_input .btnLogin {
+    width: 180px;
+    height: 35px;
+    border-radius: 20px;
+    color: #F4FDFF;
+    background: #755D58;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#container__login .LGform .form_input .btnLogin:hover {
+    opacity: 0.8;
+}
+
+#container__register {
+    width: 800px;
+    height: 430px;
+    position: fixed;
+    top: 1000%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    transition: all 0.5s linear;
+}
+
+#container__register .RGform {
+    width: 100%;
+    flex-basis: 50%;
+    border: 1px solid black;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px; 
+    background: #EEE0DC;
+}
+
+#container__register .RGform .title_RG {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+#container__register .RGform .form_input {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#container__register .RGform .form_input .txt {
+    width: 85%;
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: none;
+    background: #D9D9D9;
+    align-self: center;
+}
+
+#container__register .RGform .form_input .btnRegister {
+    width: 180px;
+    height: 35px;
+    border-radius: 20px;
+    color: #F4FDFF;
+    background: #755D58;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+#container__register .RGform .form_input .btnRegister:hover {
+    opacity: 0.8;
+} 
+
+#container__register .decor {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 25px;
+    background: #755D58;
+    color: #F4FDFF;
+    border: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+    gap: 3rem;
+}
+
+#container__register .decor .welcome {
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#container__register .decor .slogan {
+    font-style: oblique 8deg;
+    height: 150px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-bottom: 80px; */
+}
+
+#container__register .decor .btnLogin {
+    width: 180px;
+    height: 35px;
+    /* position: absolute; */
+    border-radius: 20px;
+    color: #F4FDFF;
+    background: black;
+    border: 2px solid #F4FDFF;
+    cursor: pointer;
+    
+    /* bottom: 12px; */
+}
+
+#container__register .decor .btnLogin:hover {
+    opacity: 0.8;
+}

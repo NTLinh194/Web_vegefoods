@@ -1,11 +1,10 @@
 <?php 
     require_once('DBConfig.php');
-    require_once('function.php');
 
-    $eventHandler = new handleEvent();
+    $eventHandler = new DBConnection();
 
     $query = "SELECT * FROM Products";
-    $data = $eventHandler->($query);
+    $data = $eventHandler->selectData($query);
     if ($data === false) {
         echo "Error occurred while getting data.";
     }
