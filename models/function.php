@@ -15,14 +15,14 @@
             return $result;
         }
 
-        public function insertProduct($pro_name, $pro_price, $pro_status) {
-            $query = "INSERT INTO products (ProductName, ProductPrice, ProductStatus) VALUES ('$pro_name', '$pro_price', '$pro_status')";
+        public function insertProduct($pro_id, $pro_name, $pro_desc, $pro_image, $pro_price, $pro_oldprice, $pro_status) {
+            $query = "INSERT INTO products (ProductName, ProductDesc, ProductImage, ProductPrice, OldPrice, ProductStatus) VALUES ('$pro_name', '$pro_desc', '$pro_image', '$pro_price', '$pro_oldprice', '$pro_status')";
             $result = $this->db->insertData($query);
             return $result;
         }
 
-        public function updateProduct($pro_id, $pro_name, $pro_price, $pro_status) {
-            $query = "UPDATE products SET ProductName='$pro_name', ProductPrice='$pro_price', ProductStatus='$pro_status' WHERE ProductID='$pro_id'";
+        public function updateProduct($pro_id, $pro_name, $pro_desc, $pro_image, $pro_price, $pro_oldprice, $pro_status) {
+            $query = "UPDATE products SET ProductName='$pro_name', ProductDesc='$pro_desc', ProductImage='$pro_image', ProductPrice='$pro_price', OldPrice='$pro_oldprice', ProductStatus='$pro_status' WHERE ProductID='$pro_id'";
             $result = $this->db->updateData($query);
             return $result;
         }
