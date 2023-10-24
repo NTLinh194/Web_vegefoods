@@ -1,4 +1,5 @@
 <?php
+  ob_start();
 	include '../inc/header_admin.php';
 	include '../inc/aside_admin.php';
 	include '../../../models/function.php';
@@ -41,11 +42,13 @@
       $updateProduct = $product->updateProduct($pro_id, $pro_name, $pro_desc, $pro_image, $pro_price, $pro_oldprice, $pro_status);
 
       if ($updateProduct) {
-          // echo "Product updated successfully.";
+        header("Location: createProduct.php");
+        exit;
       } else {
-          echo "Error updating the product.";
+        echo "Error updating the product.";
       }
     } 
+  ob_end_flush();
 ?>
 
 <main role="main" class="main-content">
