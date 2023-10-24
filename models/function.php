@@ -9,6 +9,12 @@
         }
 
         // ADMIN
+        public function getProductInfo($pro_id) {
+            $query = "SELECT * FROM Products WHERE ProductID = $pro_id";
+            $result = $this->db->selectData($query);
+            return $result->fetch_assoc();
+        }
+
         public function showProduct() {
             $query = "SELECT * FROM Products ORDER BY ProductID ASC";
             $result = $this->db->selectData($query);

@@ -1,6 +1,6 @@
 <?php
-	include './inc/header_admin.php';
-	include './inc/aside_admin.php';
+	include '../inc/header_admin.php';
+	include '../inc/aside_admin.php';
 ?>
 
 <main role="main" class="main-content">
@@ -285,5 +285,5 @@
     </main> <!-- main -->
 
 <?php
-  include "./inc/footer_admin.php";
+  include "../inc/footer_admin.php";
 ?>

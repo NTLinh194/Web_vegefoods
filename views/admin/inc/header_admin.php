@@ -9,7 +9,7 @@
   <link rel="icon" href="favicon.ico">
   <title>Tiny Dashboard - A Bootstrap Dashboard Template</title>
   <!-- Simple bar CSS -->
-  <link rel="stylesheet" href="css/simplebar.css">
+  <link rel="stylesheet" href="../css/simplebar.css">
   <!-- Fonts CSS -->
   <link
     href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
@@ -56,12 +56,12 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-muted my-2" href="./#" data-toggle="modal" data-target=".modal-shortcut">
+          <a class="nav-link text-muted my-2" href="../#" data-toggle="modal" data-target=".modal-shortcut">
             <span class="fe fe-grid fe-16"></span>
           </a>
         </li>
         <li class="nav-item nav-notif">
-          <a class="nav-link text-muted my-2" href="./#" data-toggle="modal" data-target=".modal-notif">
+          <a class="nav-link text-muted my-2" href="../#" data-toggle="modal" data-target=".modal-notif">
             <span class="fe fe-bell fe-16"></span>
             <span class="dot dot-md bg-success"></span>
           </a>

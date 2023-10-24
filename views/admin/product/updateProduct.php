@@ -6,31 +6,46 @@
     $product = new handleEvent();
 
     if (isset($_GET['product_id'])) {
-        $pro_id = $_GET['product_id'];
-    } else {
-        // Nếu không có product_id trong URL, bạn có thể xử lý hoặc chuyển hướng tùy ý
-        echo "Product ID is missing.";
-        exit; // Kết thúc script
-    }
+      $pro_id = $_GET['product_id'];
+  
+      // Truy vấn thông tin sản phẩm từ cơ sở dữ liệu
+      $productInfo = $product->getProductInfo($pro_id);
+  
+      if ($productInfo) {
+        $pro_name = $productInfo['ProductName'];
+        $pro_desc = $productInfo['ProductDesc'];
+        $pro_image = $productInfo['ProductImage'];
+        $pro_price = $productInfo['ProductPrice'];
+        $pro_oldprice = $productInfo['OldPrice'];
+        $pro_status = $productInfo['ProductStatus'];
+      } else {
+        // Xử lý lỗi nếu không tìm thấy thông tin sản phẩm
+        echo "Product not found.";
+        exit;
+      }
+    }  
+
+    // Biến kiểm tra xem biểu mẫu đã được gửi hay chưa
+    $formSubmitted = false;
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $pro_name = isset($_POST['ProductName']) ? $_POST['ProductName'] : '';
-        $pro_desc = isset($_POST['ProductDesc']) ? $_POST['ProductDesc'] : '';
-        $pro_image = isset($_POST['ProductImage']) ? $_POST['ProductImage'] : '';
-        $pro_price = isset($_POST['ProductPrice']) ? $_POST['ProductPrice'] : '';
-        $pro_oldprice = isset($_POST['OldPrice']) ? $_POST['OldPrice'] : '';
-        $pro_status = isset($_POST['ProductStatus']) ? $_POST['ProductStatus'] : '';
-        
-        // Gọi hàm updateProduct với các giá trị vừa nhận được
-        $updateProduct = $product->updateProduct($pro_id, $pro_name, $pro_desc, $pro_image, $pro_price, $pro_oldprice, $pro_status);
+      $formSubmitted = true;
+      $pro_name = isset($_POST['ProductName']) ? $_POST['ProductName'] : '';
+      $pro_desc = isset($_POST['ProductDesc']) ? $_POST['ProductDesc'] : '';
+      $pro_image = isset($_POST['ProductImage']) ? $_POST['ProductImage'] : '';
+      $pro_price = isset($_POST['ProductPrice']) ? $_POST['ProductPrice'] : '';
+      $pro_oldprice = isset($_POST['OldPrice']) ? $_POST['OldPrice'] : '';
+      $pro_status = isset($_POST['ProductStatus']) ? $_POST['ProductStatus'] : '';
+      
+      // Gọi hàm updateProduct với các giá trị vừa nhận được
+      $updateProduct = $product->updateProduct($pro_id, $pro_name, $pro_desc, $pro_image, $pro_price, $pro_oldprice, $pro_status);
 
-        if ($updateProduct) {
-            // echo "Product updated successfully.";
-        } else {
-            echo "Error updating the product.";
-        }
-    }
-    
+      if ($updateProduct) {
+          // echo "Product updated successfully.";
+      } else {
+          echo "Error updating the product.";
+      }
+    } 
 ?>
 
 <main role="main" class="main-content">
@@ -39,31 +54,37 @@
           <div class="col-12">
             <div class="row">
               <div class="col-md-12 my-4">
-              <h2 class="h4 mb-1">Update Product</h2>
+                <h2 class="h4 mb-1">Update Product</h2>
                 <form action="#" class="bg-white p-5 contact-form" method="post">
-                    <div class="form-group">
-                        <input type="text" name="ProductName" class="form-control" placeholder="Name product">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="ProductDesc" class="form-control" placeholder="Description product">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="ProductImage" class="form-control" placeholder="Image product">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="ProductPrice" class="form-control" placeholder="Price product">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="OldPrice" class="form-control" placeholder="Old price product">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="ProductStatus" class="form-control" placeholder="Status product">
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" value="Send" class="btn btn-primary py-3 px-5">
-                    </div>
+                  <div class="form-group">
+                      <input type="text" name="ProductName" class="form-control" placeholder="Name product"
+                          value="<?php if (!$formSubmitted) echo $pro_name; ?>">
+                  </div>
+                  <div class="form-group">
+                      <input type="text" name="ProductDesc" class="form-control"
+                          placeholder="Description product" value="<?php if (!$formSubmitted) echo $pro_desc; ?>">
+                  </div>
+                  <div class="form-group">
+                      <input type="text" name="ProductImage" class="form-control"
+                          placeholder="Image product" value="<?php if (!$formSubmitted) echo $pro_image; ?>">
+                  </div>
+                  <div class="form-group">
+                      <input type="text" name="ProductPrice" class="form-control" placeholder="Price product"
+                          value="<?php if (!$formSubmitted) echo $pro_price; ?>">
+                  </div>
+                  <div class="form-group">
+                      <input type="text" name="OldPrice" class="form-control" placeholder="Old price product"
+                          value="<?php if (!$formSubmitted) echo $pro_oldprice; ?>">
+                  </div>
+                  <div class="form-group">
+                      <input type="text" name="ProductStatus" class="form-control"
+                          placeholder="Status product" value="<?php if (!$formSubmitted) echo $pro_status; ?>">
+                  </div>
+                  <div class="form-group">
+                      <input type="submit" value="Send" class="btn btn-primary py-3 px-5">
+                  </div>
                 </form>
-                </div>
+              </div>
             </div>
 
             <div class="row">

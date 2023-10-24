@@ -1,6 +1,6 @@
 <?php
-	include './inc/header_admin.php';
-	include './inc/aside_admin.php';
+	include '../inc/header_admin.php';
+	include '../inc/aside_admin.php';
 ?>
 
 <main role="main" class="main-content">
@@ -9,7 +9,7 @@
           <div class="col-12">
             <div class="row">
               <div class="col-md-12 my-4">
-                <h2 class="h4 mb-1">Expandable rows</h2>
+                <h2 class="h4 mb-1">Category</h2>
                 <p class="mb-3">Child rows with additional detailed information</p>
                 <div class="card shadow">
                   <div class="card-body">
@@ -187,5 +187,5 @@
     </main> <!-- main -->
 
 <?php
-  include "./inc/footer_admin.php";
+  include "../inc/footer_admin.php";
 ?>

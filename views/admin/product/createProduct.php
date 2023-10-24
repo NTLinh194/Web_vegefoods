@@ -25,7 +25,7 @@
               <h2 class="h4 mb-1">Create Product</h2>
                 <form action="#" class="bg-white p-5 contact-form" method="post">
                   <div class="form-group">
-                    <input type="text" name="ProductID" class="form-control" placeholder="Name product">
+                    <input type="text" name="ProductID" class="form-control" placeholder="ID product">
                   </div>
                   <div class="form-group">
                     <input type="text" name="ProductName" class="form-control" placeholder="Name product">
@@ -99,7 +99,8 @@
                                           </button>
                                           <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item" href="updateProduct.php?product_id=' . $product['ProductID'] . '">Edit</a>
-                                            <a class="dropdown-item" href="deleteProduct.php?product_id=<?php echo '. $product['ProductID'] .'; ?>" onclick="confirmDelete(this)">Remove</a>
+                                            <a class="dropdown-item" href="deleteProduct.php?product_id=<?php echo ' . $product['ProductID'] . '; ?>" onclick="confirmDelete(this);">Remove</a>
+
                                             <a class="dropdown-item" href="assignProduct.php?product_id=' . $product['ProductID'] . '">Assign</a>
                                           </div>
                                         </td>
@@ -243,17 +244,6 @@
       </div>
     </main> <!-- main -->
 
-<script>
-  function confirmDelete(element) {
-    var product_id = element.getAttribute("data-product-id");
-    if (confirm("Are you sure you want to delete this product?")) {
-        // Nếu người dùng đồng ý xóa, chuyển hướng đến trang xóa sản phẩm
-        window.location.href = "deleteProduct.php?product_id=" + product_id;
-    } else {
-        // Nếu người dùng nhấn hủy, không thực hiện hành động nào
-    }
-  }
-</script>
 
 <?php
   include "../inc/footer_admin.php";
