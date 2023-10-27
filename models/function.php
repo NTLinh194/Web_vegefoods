@@ -8,15 +8,15 @@
             $this->db = new DBConnection();
         }
 
-        // ADMIN
+        //------------------------------------------------ ADMIN PRODUCT ------------------------------------------------//
         public function getProductInfo($pro_id) {
-            $query = "SELECT * FROM Products WHERE ProductID = $pro_id";
+            $query = "SELECT * FROM products WHERE ProductID = $pro_id";
             $result = $this->db->selectData($query);
             return $result->fetch_assoc();
         }
 
         public function showProduct() {
-            $query = "SELECT * FROM Products ORDER BY ProductID ASC";
+            $query = "SELECT * FROM products ORDER BY ProductID ASC";
             $result = $this->db->selectData($query);
             return $result;
         }
@@ -35,6 +35,37 @@
     
         public function deleteProduct($pro_id) {
             $query = "DELETE FROM products WHERE ProductID='$pro_id'";
+            $result = $this->db->deleteData($query);
+            return $result;
+        }
+
+        //------------------------------------------------ ADMIN CATEGORY ------------------------------------------------//
+        public function getCategoryInfo($cat_id) {
+            $query = "SELECT * FROM categories WHERE CategoryID = $cat_id";
+            $result = $this->db->selectData($query);
+            return $result->fetch_assoc();
+        }
+
+        public function showCategory() {
+            $query = "SELECT * FROM categories ORDER BY CategoryID ASC";
+            $result = $this->db->selectData($query);
+            return $result;
+        }
+
+        public function insertCategory($cat_id, $cat_name, $cat_status) {
+            $query = "INSERT INTO categories (CategoryID, CategoryName, CategoryStatus) VALUES ('$cat_id', '$cat_name', '$cat_status')";
+            $result = $this->db->insertData($query);
+            return $result;
+        }
+
+        public function updateCategory($cat_id, $cat_name, $cat_status) {
+            $query = "UPDATE categories SET CategoryName='$cat_name', CategoryStatus='$cat_status' WHERE CategoryID='$cat_id'";
+            $result = $this->db->updateData($query);
+            return $result;
+        }
+    
+        public function deleteCategory($cat_id) {
+            $query = "DELETE FROM categories WHERE CategoryID='$cat_id'";
             $result = $this->db->deleteData($query);
             return $result;
         }

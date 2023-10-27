@@ -1,6 +1,16 @@
 <?php
 	include '../inc/header_admin.php';
 	include '../inc/aside_admin.php';
+  include '../../../models/function.php';
+
+  $category = new handleEvent();
+
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $cat_id = $_POST['CategoryID']; 
+    $cat_name = $_POST['CategoryName'];
+    $cat_status = $_POST['CategoryStatus'];
+    $insertCategory = $category->insertCategory($cat_id, $cat_name, $cat_status);
+  }
 ?>
 
 <main role="main" class="main-content">
@@ -9,7 +19,27 @@
           <div class="col-12">
             <div class="row">
               <div class="col-md-12 my-4">
-                <h2 class="h4 mb-1">Category</h2>
+                <h2 class="h4 mb-1">Create Category</h2>
+                <form action="#" class="bg-white p-5 contact-form" method="post">
+                  <div class="form-group">
+                    <input type="text" name="CategoryID" class="form-control" placeholder="ID category">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="CategoryName" class="form-control" placeholder="Name category">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="CategoryStatus" class="form-control" placeholder="Status category">
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" value="Send" class="btn btn-primary py-3 px-5">
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 my-4">
+                <h2 class="h4 mb-1">List Category</h2>
                 <p class="mb-3">Child rows with additional detailed information</p>
                 <div class="card shadow">
                   <div class="card-body">
@@ -18,38 +48,40 @@
                       <thead class="thead-dark">
                         <tr>
                           <th>STT</th>
+                          <th>ID</th>
                           <th>Name</th>
-                          <th>Description</th>
-                          <th>Image</th>
-                          <th>Quantity</th>
-                          <th>Price</th>
-                          <th>Old price</th>
-                          <th>category</th>
                           <th>Status</th>
+                          <th>Action</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr class="accordion-toggle collapsed" id="c-2474" data-toggle="collapse" data-parent="#c-2474"
-                          href="#collap-2474">
-                          <td>3599</td>
-                          <td>2020-09-12 11:21:03</td>
-                          <td>3951</td>
-                          <td>Alexander Ellis</td>
-                          <td><span class="badge badge-pill badge-success mr-2">S</span><small
-                              class="text-muted">Paid</small></td>
-                          <td>$37.39</td>
-                          <td>$80.11</td>
-                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <span class="text-muted sr-only">Action</span>
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right">
-                              <a class="dropdown-item" href="#">Edit</a>
-                              <a class="dropdown-item" href="#">Remove</a>
-                              <a class="dropdown-item" href="#">Assign</a>
-                            </div>
-                          </td>
-                        </tr>
+                        <?php
+                          $result = $category->showCategory();
+                          if ($result === false) {
+                            echo "Error occurred while getting data.";
+                          } 
+                          else {
+                              foreach ($result as $category) {
+                                echo  '<tr class="accordion-toggle collapsed" id="c-2474" data-toggle="collapse" data-parent="#c-2474"
+                                        href="#collap-2474">
+                                        <td>' . $category['CategoryID'] . '</td>
+                                        <td>' . $category['CategoryID'] . '</td>
+                                        <td>' . $category['CategoryName'] . '</td>
+                                        <td>' . $category['CategoryStatus'] . '</td>
+                                        <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="text-muted sr-only">Action</span>
+                                          </button>
+                                          <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item" href="updateCategory.php?category_id=' . $category['CategoryID'] . '">Edit</a>
+                                            <a class="dropdown-item" href="deleteCategory.php?category_id=' . $category['CategoryID'] . '">Remove</a>
+                                            <a class="dropdown-item" href="assignCategory.php?category_id=' . $category['CategoryID'] . '">Assign</a>
+                                          </div>
+                                        </td>
+                                      </tr>';
+                              }
+                            }
+                        ?>
                       </tbody>
                     </table>
                   </div>

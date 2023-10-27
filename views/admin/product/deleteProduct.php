@@ -17,7 +17,7 @@
     }     
 ?>
 
-<script>
+<!-- <script>
 function confirmDelete(element) {
     var product_id = element.getAttribute("data-product-id");
     if (confirm("Are you sure you want to delete this product?")) {
@@ -28,4 +28,4 @@ function confirmDelete(element) {
         return false;
     }
 }
-</script>
+</script> -->

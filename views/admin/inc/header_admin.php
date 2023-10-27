@@ -35,8 +35,8 @@
   <!-- Date Range Picker CSS -->
   <link rel="stylesheet" href="../css/daterangepicker.css">
   <!-- App CSS -->
-  <link rel="stylesheet" href="../css/app-light1.css" id="lightTheme" disabled>
-  <link rel="stylesheet" href="../css/app-dark.css" id="darkTheme">
+  <link rel="stylesheet" href="../css/app-light.css" id="lightTheme" disabled>
+  <link rel="stylesheet" href="../css/app-dark1.css" id="darkTheme">
 </head>
 
 <body class="vertical  dark  ">
@@ -56,12 +56,12 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-muted my-2" href="../#" data-toggle="modal" data-target=".modal-shortcut">
+          <a class="nav-link text-muted my-2" href="#" data-toggle="modal" data-target=".modal-shortcut">
             <span class="fe fe-grid fe-16"></span>
           </a>
         </li>
         <li class="nav-item nav-notif">
-          <a class="nav-link text-muted my-2" href="../#" data-toggle="modal" data-target=".modal-notif">
+          <a class="nav-link text-muted my-2" href="#" data-toggle="modal" data-target=".modal-notif">
             <span class="fe fe-bell fe-16"></span>
             <span class="dot dot-md bg-success"></span>
           </a>

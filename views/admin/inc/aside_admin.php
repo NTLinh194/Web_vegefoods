@@ -36,11 +36,11 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link pl-3" href="./ui-typograpy.php"><span class="ml-1 item-text">Danh mục</span></a>
+                <a class="nav-link pl-3" href="../category/createCategory.php"><span class="ml-1 item-text">Danh mục</span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link pl-3" href="./ui-icons.php"><span class="ml-1 item-text">Icons</span></a>
-              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link pl-3" href="./ui-typograpy.php"><span class="ml-1 item-text">Icons</span></a>
+              </li> -->
             </ul>
           </li>
 

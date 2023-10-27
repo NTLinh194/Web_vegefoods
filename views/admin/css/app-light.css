@@ -11512,6 +11512,7 @@ select {
 
 .table.border-v {
   border: 1px solid #e9ecef;
+  text-align: center;
 }
 
 .table.border-v tbody tr td,

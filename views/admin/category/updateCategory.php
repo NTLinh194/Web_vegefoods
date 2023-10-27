@@ -1,19 +1,45 @@
 <?php
+  ob_start();
 	include '../inc/header_admin.php';
 	include '../inc/aside_admin.php';
 	include '../../../models/function.php';
 
-  $product = new handleEvent();
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $pro_id = $_POST['ProductID']; 
-    $pro_name = $_POST['ProductName'];
-    $pro_desc = $_POST['ProductDesc'];
-    $pro_image = $_POST['ProductImage'];
-    $pro_price = $_POST['ProductPrice'];
-    $pro_oldprice = $_POST['OldPrice'];
-    $pro_status = $_POST['ProductStatus'];
-    $insertProduct = $product->insertProduct($pro_id, $pro_name, $pro_desc, $pro_image, $pro_price, $pro_oldprice, $pro_status);
-  }
+  $category = new handleEvent();
+
+  if (isset($_GET['category_id'])) {
+    $cat_id = $_GET['category_id'];
+
+    // Truy vấn thông tin danh mục từ cơ sở dữ liệu
+    $categoryInfo = $category->getCategoryInfo($cat_id);
+
+    if ($categoryInfo) {
+        $cat_name = $categoryInfo['CategoryName'];
+        $cat_status = $categoryInfo['CategoryStatus'];
+    } else {
+        echo "Category not found.";
+        exit;
+    }
+  }  
+
+  // Biến kiểm tra xem biểu mẫu đã được gửi hay chưa
+  $formSubmitted = false;
+
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $formSubmitted = true;
+    $cat_name = isset($_POST['CategoryName']) ? $_POST['CategoryName'] : '';
+    $cat_status = isset($_POST['CategoryStatus']) ? $_POST['CategoryStatus'] : '';
+    
+    // Gọi hàm updateProduct với các giá trị vừa nhận được
+    $updateCategory = $category->updateCategory($cat_id, $cat_name, $cat_status);
+
+    if ($updateCategory) {
+      header("Location: createCategory.php");
+      exit;
+    } else {
+      echo "Error updating the product.";
+    }
+  } 
+  ob_end_flush();
 ?>
 
 <main role="main" class="main-content">
@@ -22,31 +48,18 @@
           <div class="col-12">
             <div class="row">
               <div class="col-md-12 my-4">
-                <h2 class="h4 mb-1">Create Product</h2>
-                <form action="#" class="bg-white p-5 contact-form" method="post">
+                <h2 class="h4 mb-1">Update Product</h2>
+                <form action="" class="bg-white p-5 contact-form" method="post">
                   <div class="form-group">
-                    <input type="text" name="ProductID" class="form-control" placeholder="ID product">
+                      <input type="text" name="CategoryName" class="form-control" placeholder="Name category"
+                          value="<?php if (!$formSubmitted) echo $cat_name; ?>">
                   </div>
                   <div class="form-group">
-                    <input type="text" name="ProductName" class="form-control" placeholder="Name product">
+                      <input type="text" name="CategoryStatus" class="form-control" placeholder="Status category" 
+                          value="<?php if (!$formSubmitted) echo $cat_status; ?>">
                   </div>
                   <div class="form-group">
-                    <input type="text" name="ProductDesc" class="form-control" placeholder="Description product">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" name="ProductImage" class="form-control" placeholder="Image product">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" name="ProductPrice" class="form-control" placeholder="Price product">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" name="OldPrice" class="form-control" placeholder="Old price product">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" name="ProductStatus" class="form-control" placeholder="Status product">
-                  </div>
-                  <div class="form-group">
-                    <input type="submit" value="Send" class="btn btn-primary py-3 px-5">
+                      <input type="submit" value="Send" class="btn btn-primary py-3 px-5">
                   </div>
                 </form>
               </div>
@@ -63,47 +76,37 @@
                       <thead class="thead-dark">
                         <tr>
                           <th>STT</th>
+                          <th>ID</th>
                           <th>Name</th>
-                          <th>Description</th>
-                          <th>Image</th>
-                          <th>Quantity</th>
-                          <th>Price</th>
-                          <th>Old price</th>
-                          <th>category</th>
                           <th>Status</th>
                           <th>Action</th>
                         </tr>
                       </thead>
                       <tbody>
                         <?php
-                          $result = $product->showProduct();
+                          $result = $category->showCategory();
                           if ($result === false) {
                             echo "Error occurred while getting data.";
                           } 
                           else {
-                              foreach ($result as $product) {
+                              foreach ($result as $category) {
                                 echo  '<tr class="accordion-toggle collapsed" id="c-2474" data-toggle="collapse" data-parent="#c-2474"
                                         href="#collap-2474">
-                                        <td>' . $product['ProductID'] . '</td>
-                                        <td>' . $product['ProductName'] . '</td>
-                                        <td>' . $product['ProductDesc'] . '</td>
-                                        <td>' . $product['ProductImage'] . '</td>
-                                        <td>' . $product['ProductQuantity'] . '</td>
-                                        <td>' . number_format($product['ProductPrice'], 3) . '</td>
-                                        <td>' . number_format($product['OldPrice'], 3) . '</td>
-                                        <td>' . $product['CategoryID'] . '</td>
-                                        <td>' . $product['ProductStatus'] . '</td>
-                                        <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="text-muted sr-only">Action</span>
-                                          </button>
-                                          <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" href="updateProduct.php?product_id=' . $product['ProductID'] . '">Edit</a>
-                                            <a class="dropdown-item" href="deleteProduct.php?product_id=' . $product['ProductID'] . '>">Remove</a>
-                                            <a class="dropdown-item" href="assignProduct.php?product_id=' . $product['ProductID'] . '">Assign</a>
-                                          </div>
-                                        </td>
-                                      </tr>';
+                                            <td>' . $category['CategoryID'] . '</td>
+                                            <td>' . $category['CategoryID'] . '</td>
+                                            <td>' . $category['CategoryName'] . '</td>
+                                            <td>' . $category['CategoryStatus'] . '</td>
+                                            <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="text-muted sr-only">Action</span>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="updateCategory.php?category_id=' . $category['CategoryID'] . '">Edit</a>
+                                                <a class="dropdown-item" href="deleteCategory.php?category_id=' . $category['CategoryID'] . '">Remove</a>
+                                                <a class="dropdown-item" href="assignCategory.php?category_id=' . $category['CategoryID'] . '">Assign</a>
+                                            </div>
+                                            </td>
+                                        </tr>';
                               }
                             }
                         ?>
@@ -242,7 +245,6 @@
         </div>
       </div>
     </main> <!-- main -->
-
 
 <?php
   include "../inc/footer_admin.php";
