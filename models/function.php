@@ -16,19 +16,19 @@
         }
 
         public function showProduct() {
-            $query = "SELECT * FROM products ORDER BY ProductID ASC";
+            $query = "SELECT * FROM products JOIN categories ON categories.CategoryID = products.CategoryID";
             $result = $this->db->selectData($query);
             return $result;
         }
 
-        public function insertProduct($pro_id, $pro_name, $pro_desc, $pro_image, $pro_price, $pro_oldprice, $pro_status) {
-            $query = "INSERT INTO products (ProductName, ProductDesc, ProductImage, ProductPrice, OldPrice, ProductStatus) VALUES ('$pro_name', '$pro_desc', '$pro_image', '$pro_price', '$pro_oldprice', '$pro_status')";
+        public function insertProduct($pro_id, $pro_name, $pro_desc, $pro_image, $pro_quantity, $pro_price, $pro_oldprice, $cat_id, $pro_status) {
+            $query = "INSERT INTO products (ProductName, ProductDesc, ProductImage, ProductQuantity, ProductPrice, OldPrice, CategoryID, ProductStatus) VALUES ('$pro_name', '$pro_desc', '$pro_image', '$pro_quantity', '$pro_price', '$pro_oldprice', '$cat_id', '$pro_status')";
             $result = $this->db->insertData($query);
             return $result;
         }
 
-        public function updateProduct($pro_id, $pro_name, $pro_desc, $pro_image, $pro_price, $pro_oldprice, $pro_status) {
-            $query = "UPDATE products SET ProductName='$pro_name', ProductDesc='$pro_desc', ProductImage='$pro_image', ProductPrice='$pro_price', OldPrice='$pro_oldprice', ProductStatus='$pro_status' WHERE ProductID='$pro_id'";
+        public function updateProduct($pro_id, $pro_name, $pro_desc, $pro_image, $pro_quantity, $pro_price, $pro_oldprice, $cat_id, $pro_status) {
+            $query = "UPDATE products SET ProductName='$pro_name', ProductDesc='$pro_desc', ProductImage='$pro_image', ProductQuantity='$pro_quantity', ProductPrice='$pro_price', OldPrice='$pro_oldprice', CategoryID='$cat_id', ProductStatus='$pro_status' WHERE ProductID='$pro_id'";
             $result = $this->db->updateData($query);
             return $result;
         }

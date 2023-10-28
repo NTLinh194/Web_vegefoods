@@ -17257,3 +17257,13 @@ a.uppy-Dashboard-poweredBy {
     right: -35px;
   }
 }
+
+
+/* Add */
+.accordion-toggle.collapsed td .img_product {
+  width: 100%;
+}
+
+.form-group.text--color {
+  color: #000 !important;
+}

@@ -1,17 +1,16 @@
 <?php
-    require_once('DBConfig.php');
+    include 'function.php';
 
-    $eventHandler = new DBConnection();
+    $eventHandler = new handleEvent();
 
-    $query = "SELECT * FROM Products ORDER BY ProductPrice ASC";
-    $data = $eventHandler->selectData($query);
+    $data = $eventHandler->showProduct();
     if ($data === false) {
         echo "Error occurred while getting data.";
     } 
     else {
         foreach ($data as $product) {
             echo    '<div class="col-md-6 col-lg-3 ftco-animate">
-                        <div class="product" pid="">
+                        <div class="product" id="product--js">
                             <a href="info-product.php?productID=' . $product['ProductID'] . '" class="img-prod">
                                 <img class="img-fluid" src="../assets/images/' . $product['ProductImage'] . '" alt="Colorlib Template">
                                 <span class="status">30%</span>

@@ -19,7 +19,7 @@
 
         <ul class="navbar-nav flex-fill w-100 mb-2">
           <li class="nav-item active w-100">
-            <a class="nav-link" href="home_admin.php">
+            <a class="nav-link" href="../main/home_admin.php">
               <i class="fe fe-calendar fe-16"></i>
               <span class="ml-3 item-text">Trang Chủ</span>
             </a>
@@ -51,13 +51,13 @@
             </a>
             <ul class="collapse list-unstyled pl-4 w-100" id="tables">
               <li class="nav-item">
-                <a class="nav-link pl-3" href="./table_basic.php"><span class="ml-1 item-text">Phiếu nhập</span></a>
+                <a class="nav-link pl-3" href="../main/table_basic.php"><span class="ml-1 item-text">Phiếu nhập</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link pl-3" href="./table_advanced.php"><span class="ml-1 item-text">Phiếu xuất</span></a>
+                <a class="nav-link pl-3" href="../main/table_advanced.php"><span class="ml-1 item-text">Phiếu xuất</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link pl-3" href="./table_datatables.php"><span class="ml-1 item-text">Data
+                <a class="nav-link pl-3" href="../main/table_datatables.php"><span class="ml-1 item-text">Data
                     Tables</span></a>
               </li>
             </ul>

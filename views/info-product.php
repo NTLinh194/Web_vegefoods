@@ -38,10 +38,8 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="row">
-			<?php
-                require('../models/productModel.php');
-            ?>
+		<div class="row" id="infoProduct--js">
+			
 		</div>
 	</div>
 </section>

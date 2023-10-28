@@ -9,11 +9,15 @@
     $pro_name = $_POST['ProductName'];
     $pro_desc = $_POST['ProductDesc'];
     $pro_image = $_POST['ProductImage'];
+    $pro_quantity = $_POST['ProductQuantity'];
     $pro_price = $_POST['ProductPrice'];
     $pro_oldprice = $_POST['OldPrice'];
+    $cat_id = $_POST['CategoryID'];
     $pro_status = $_POST['ProductStatus'];
-    $insertProduct = $product->insertProduct($pro_id, $pro_name, $pro_desc, $pro_image, $pro_price, $pro_oldprice, $pro_status);
+    $insertProduct = $product->insertProduct($pro_id, $pro_name, $pro_desc, $pro_image, $pro_quantity, $pro_price, $pro_oldprice, $cat_id, $pro_status);
   }
+
+  $result = $product->showProduct();
 ?>
 
 <main role="main" class="main-content">
@@ -30,17 +34,36 @@
                   <div class="form-group">
                     <input type="text" name="ProductName" class="form-control" placeholder="Name product">
                   </div>
-                  <div class="form-group">
-                    <input type="text" name="ProductDesc" class="form-control" placeholder="Description product">
+                  <div class="form-group text--color">
+                    <textarea type="text" name="ProductDesc" id="editor" class="form-control" rows="10" placeholder="Description product"></textarea>
                   </div>
                   <div class="form-group">
-                    <input type="text" name="ProductImage" class="form-control" placeholder="Image product">
+                    <input type="file" name="ProductImage" class="form-control" accept=".jpg, .jpeg, .png, .gif, .webp">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="ProductQuantity" class="form-control" placeholder="Quantity product">
                   </div>
                   <div class="form-group">
                     <input type="text" name="ProductPrice" class="form-control" placeholder="Price product">
                   </div>
                   <div class="form-group">
                     <input type="text" name="OldPrice" class="form-control" placeholder="Old price product">
+                  </div>
+                  <div class="form-group">
+                    <select name="CategoryID" id="" class="form-control">
+                      <option value="#">-- choise --</option>
+                      <?php
+                        $resultCat = $product->showCategory();
+                        if ($resultCat === false) {
+                          echo "Error occurred while getting data.";
+                        } 
+                        else {
+                            foreach ($resultCat as $cat_item) {
+                              echo  '<option value="'. $cat_item['CategoryID'] . '">'. $cat_item['CategoryID'] . ' - '. $cat_item['CategoryName'] . '</option>';
+                            }
+                        }
+                      ?>
+                    </select>
                   </div>
                   <div class="form-group">
                     <input type="text" name="ProductStatus" class="form-control" placeholder="Status product">
@@ -75,37 +98,48 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <?php
+                      <?php
                           $result = $product->showProduct();
                           if ($result === false) {
                             echo "Error occurred while getting data.";
                           } 
                           else {
-                              foreach ($result as $product) {
-                                echo  '<tr class="accordion-toggle collapsed" id="c-2474" data-toggle="collapse" data-parent="#c-2474"
-                                        href="#collap-2474">
-                                        <td>' . $product['ProductID'] . '</td>
-                                        <td>' . $product['ProductName'] . '</td>
-                                        <td>' . $product['ProductDesc'] . '</td>
-                                        <td>' . $product['ProductImage'] . '</td>
-                                        <td>' . $product['ProductQuantity'] . '</td>
-                                        <td>' . number_format($product['ProductPrice'], 3) . '</td>
-                                        <td>' . number_format($product['OldPrice'], 3) . '</td>
-                                        <td>' . $product['CategoryID'] . '</td>
-                                        <td>' . $product['ProductStatus'] . '</td>
-                                        <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="text-muted sr-only">Action</span>
+                            foreach ($result as $pro_item) {
+                              $productDesc = $pro_item['ProductDesc'];
+                              // Giới hạn độ dài của Description cần hiển thị (ví dụ: 100 ký tự)
+                              $maxLength = 80;
+                              $shortDesc = (strlen($productDesc) > $maxLength) ? substr($productDesc, 0, $maxLength) . "..." : $productDesc;
+
+                              echo  '<tr class="accordion-toggle collapsed" id="c-2474" data-toggle="collapse" data-parent="#c-2474"
+                                      href="#collap-2474">
+                                          <td>' . $pro_item['ProductID'] . '</td>
+                                          <td>' . $pro_item['ProductName'] . '</td>
+                                          <td>
+                                            <span data-toggle="tooltip" data-placement="top" title="' . $productDesc . '">
+                                                ' . $shortDesc . '
+                                            </span>
+                                          </td>
+                                          <td>
+                                            <img class="img_product" src="../../../assets/images/' . $pro_item['ProductImage'] . '" alt="">
+                                          </td>
+                                          <td>' . $pro_item['ProductQuantity'] . '</td>
+                                          <td>' . number_format($pro_item['ProductPrice'], 3) . '</td>
+                                          <td>' . number_format($pro_item['OldPrice'], 3) . '</td>
+                                          <td>' . $pro_item['CategoryID'] . '</td>
+                                          <td>' . $pro_item['ProductStatus'] . '</td>
+                                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              <span class="text-muted sr-only">Action</span>
                                           </button>
                                           <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" href="updateProduct.php?product_id=' . $product['ProductID'] . '">Edit</a>
-                                            <a class="dropdown-item" href="deleteProduct.php?product_id=' . $product['ProductID'] . '>">Remove</a>
-                                            <a class="dropdown-item" href="assignProduct.php?product_id=' . $product['ProductID'] . '">Assign</a>
+                                              <a class="dropdown-item" href="updateProduct.php?product_id=' . $pro_item['ProductID'] . '">Edit</a>
+                                              <a class="dropdown-item" href="deleteProduct.php?product_id=' . $pro_item['ProductID'] . '">Remove</a>
+                                              <a class="dropdown-item" href="assignProduct.php?product_id=' . $pro_item['ProductID'] . '">Assign</a>
                                           </div>
-                                        </td>
+                                          </td>
                                       </tr>';
-                              }
                             }
+                          }
                         ?>
                       </tbody>
                     </table>
@@ -243,6 +277,13 @@
       </div>
     </main> <!-- main -->
 
+<script>
+  ClassicEditor
+      .create( document.querySelector( '#editor' ) )
+      .catch( error => {
+          console.error( error );
+  } );
+</script>
 
 <?php
   include "../inc/footer_admin.php";

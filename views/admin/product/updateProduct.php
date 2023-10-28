@@ -16,8 +16,10 @@
         $pro_name = $productInfo['ProductName'];
         $pro_desc = $productInfo['ProductDesc'];
         $pro_image = $productInfo['ProductImage'];
+        $pro_quantity = $productInfo['ProductQuantity'];
         $pro_price = $productInfo['ProductPrice'];
         $pro_oldprice = $productInfo['OldPrice'];
+        $cat_id = $productInfo['CategoryID'];
         $pro_status = $productInfo['ProductStatus'];
       } else {
         // Xử lý lỗi nếu không tìm thấy thông tin sản phẩm
@@ -34,12 +36,14 @@
       $pro_name = isset($_POST['ProductName']) ? $_POST['ProductName'] : '';
       $pro_desc = isset($_POST['ProductDesc']) ? $_POST['ProductDesc'] : '';
       $pro_image = isset($_POST['ProductImage']) ? $_POST['ProductImage'] : '';
+      $pro_quantity = isset($_POST['ProductQuantity']) ? $_POST['ProductQuantity'] : '';
       $pro_price = isset($_POST['ProductPrice']) ? $_POST['ProductPrice'] : '';
       $pro_oldprice = isset($_POST['OldPrice']) ? $_POST['OldPrice'] : '';
+      $cat_id = isset($_POST['CategoryID']) ? $_POST['CategoryID'] : '';
       $pro_status = isset($_POST['ProductStatus']) ? $_POST['ProductStatus'] : '';
       
       // Gọi hàm updateProduct với các giá trị vừa nhận được
-      $updateProduct = $product->updateProduct($pro_id, $pro_name, $pro_desc, $pro_image, $pro_price, $pro_oldprice, $pro_status);
+      $updateProduct = $product->updateProduct($pro_id, $pro_name, $pro_desc, $pro_image, $pro_quantity, $pro_price, $pro_oldprice, $cat_id, $pro_status);
 
       if ($updateProduct) {
         header("Location: createProduct.php");
@@ -63,21 +67,45 @@
                       <input type="text" name="ProductName" class="form-control" placeholder="Name product"
                           value="<?php if (!$formSubmitted) echo $pro_name; ?>">
                   </div>
-                  <div class="form-group">
-                      <input type="text" name="ProductDesc" class="form-control"
-                          placeholder="Description product" value="<?php if (!$formSubmitted) echo $pro_desc; ?>">
+                  <div class="form-group text--color">
+                      <textarea type="text" name="ProductDesc" id="editor" class="form-control" rows="5"
+                          placeholder="Description product" value="<?php if (!$formSubmitted) echo $pro_desc; ?>"></textarea>
                   </div>
                   <div class="form-group">
-                      <input type="text" name="ProductImage" class="form-control"
-                          placeholder="Image product" value="<?php if (!$formSubmitted) echo $pro_image; ?>">
+                      <input type="file" name="ProductImage" class="form-control" accept=".jpg, .jpeg, .png, .gif, .webp"
+                          value="<?php if (!$formSubmitted) echo $pro_image; ?>">
                   </div>
                   <div class="form-group">
-                      <input type="text" name="ProductPrice" class="form-control" placeholder="Price product"
-                          value="<?php if (!$formSubmitted) echo $pro_price; ?>">
+                    <input type="text" name="ProductQuantity" class="form-control" 
+                          placeholder="Quantity product" value="<?php if (!$formSubmitted) echo $pro_quantity; ?>">
+                  </div>
+                  <div class="form-group">
+                      <input type="text" name="ProductPrice" class="form-control" 
+                          placeholder="Price product" value="<?php if (!$formSubmitted) echo $pro_price; ?>">
                   </div>
                   <div class="form-group">
                       <input type="text" name="OldPrice" class="form-control" placeholder="Old price product"
                           value="<?php if (!$formSubmitted) echo $pro_oldprice; ?>">
+                  </div>
+                  <div class="form-group">
+                    <select name="CategoryID" id="" class="form-control" 
+                          value="<?php if (!$formSubmitted) echo $cat_id; ?>">
+                      <!-- <option value="#">-- choise --</option> -->
+                      <?php
+                        $resultCat = $product->showCategory();
+                        if ($resultCat === false) {
+                            echo "Error occurred while getting data.";
+                        } else {
+                            foreach ($resultCat as $pro_item) {
+                                $category_id = $pro_item['CategoryID'];
+                                $category_name = $pro_item['CategoryName'];
+                                $selected = ($category_id == $cat_id) ? "selected" : "";
+                
+                                echo '<option value="' . $category_id . '" ' . $selected . '>' . $category_id . ' - ' . $category_name . '</option>';
+                            }
+                        }
+                      ?>
+                    </select>
                   </div>
                   <div class="form-group">
                       <input type="text" name="ProductStatus" class="form-control"
@@ -119,31 +147,42 @@
                             echo "Error occurred while getting data.";
                           } 
                           else {
-                              foreach ($result as $product) {
-                                echo  '<tr class="accordion-toggle collapsed" id="c-2474" data-toggle="collapse" data-parent="#c-2474"
-                                        href="#collap-2474">
-                                            <td>' . $product['ProductID'] . '</td>
-                                            <td>' . $product['ProductName'] . '</td>
-                                            <td>' . $product['ProductDesc'] . '</td>
-                                            <td>' . $product['ProductImage'] . '</td>
-                                            <td>' . $product['ProductQuantity'] . '</td>
-                                            <td>' . number_format($product['ProductPrice'], 3) . '</td>
-                                            <td>' . number_format($product['OldPrice'], 3) . '</td>
-                                            <td>' . $product['CategoryID'] . '</td>
-                                            <td>' . $product['ProductStatus'] . '</td>
-                                            <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span class="text-muted sr-only">Action</span>
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <a class="dropdown-item" href="updateProduct.php?product_id=' . $product['ProductID'] . '">Edit</a>
-                                                <a class="dropdown-item" href="deleteProduct.php?product_id=' . $product['ProductID'] . '">Remove</a>
-                                                <a class="dropdown-item" href="assignProduct.php?product_id=' . $product['ProductID'] . '">Assign</a>
-                                            </div>
-                                            </td>
-                                        </tr>';
-                              }
+                            foreach ($result as $pro_item) {
+                              $productDesc = $pro_item['ProductDesc'];
+                              // Giới hạn độ dài của Description cần hiển thị (ví dụ: 100 ký tự)
+                              $maxLength = 80;
+                              $shortDesc = (strlen($productDesc) > $maxLength) ? substr($productDesc, 0, $maxLength) . "..." : $productDesc;
+
+                              echo  '<tr class="accordion-toggle collapsed" id="c-2474" data-toggle="collapse" data-parent="#c-2474"
+                                      href="#collap-2474">
+                                          <td>' . $pro_item['ProductID'] . '</td>
+                                          <td>' . $pro_item['ProductName'] . '</td>
+                                          <td>
+                                            <span data-toggle="tooltip" data-placement="top" title="' . $productDesc . '">
+                                                ' . $shortDesc . '
+                                            </span>
+                                          </td>
+                                          <td>
+                                            <img class="img_product" src="../../../assets/images/' . $pro_item['ProductImage'] . '" alt="">
+                                          </td>
+                                          <td>' . $pro_item['ProductQuantity'] . '</td>
+                                          <td>' . number_format($pro_item['ProductPrice'], 3) . '</td>
+                                          <td>' . number_format($pro_item['OldPrice'], 3) . '</td>
+                                          <td>' . $pro_item['CategoryID'] . '</td>
+                                          <td>' . $pro_item['ProductStatus'] . '</td>
+                                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              <span class="text-muted sr-only">Action</span>
+                                          </button>
+                                          <div class="dropdown-menu dropdown-menu-right">
+                                              <a class="dropdown-item" href="updateProduct.php?product_id=' . $pro_item['ProductID'] . '">Edit</a>
+                                              <a class="dropdown-item" href="deleteProduct.php?product_id=' . $pro_item['ProductID'] . '">Remove</a>
+                                              <a class="dropdown-item" href="assignProduct.php?product_id=' . $pro_item['ProductID'] . '">Assign</a>
+                                          </div>
+                                          </td>
+                                      </tr>';
                             }
+                          }
                         ?>
                       </tbody>
                     </table>
@@ -280,6 +319,15 @@
         </div>
       </div>
     </main> <!-- main -->
+
+
+<script>
+  ClassicEditor
+      .create( document.querySelector( '#editor' ) )
+      .catch( error => {
+          console.error( error );
+  } );
+</script>
 
 <?php
   include "../inc/footer_admin.php";

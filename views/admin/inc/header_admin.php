@@ -37,6 +37,8 @@
   <!-- App CSS -->
   <link rel="stylesheet" href="../css/app-light.css" id="lightTheme" disabled>
   <link rel="stylesheet" href="../css/app-dark1.css" id="darkTheme">
+  <!-- ckeditor5 -->
+  <script src="../../../ckeditor5-build-classic/ckeditor.js"></script>
 </head>
 
 <body class="vertical  dark  ">

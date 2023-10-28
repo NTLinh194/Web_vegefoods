@@ -25,10 +25,10 @@
                     <input type="text" name="CategoryID" class="form-control" placeholder="ID category">
                   </div>
                   <div class="form-group">
-                    <input type="text" name="CategoryName" class="form-control" placeholder="Name category">
+                    <input type="text" name="CategoryName" class="form-control" placeholder="Name category" required>
                   </div>
                   <div class="form-group">
-                    <input type="text" name="CategoryStatus" class="form-control" placeholder="Status category">
+                    <input type="text" name="CategoryStatus" class="form-control" placeholder="Status category" required>
                   </div>
                   <div class="form-group">
                     <input type="submit" value="Send" class="btn btn-primary py-3 px-5">
